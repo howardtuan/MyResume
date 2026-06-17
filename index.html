@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/resume.css">
+  <link rel="stylesheet" href="assets/css/resume.css?v=20260617-experience">
 </head>
 <body id="top" class="home">
   <a href="#main" class="skip-link">跳至主要內容</a>
@@ -133,7 +133,9 @@
               <p>教授 APCS、Scratch、Python、JavaScript、HTML、Database、Algorithm 與 AI，協助學生建立程式基礎與解題能力。</p>
             </summary>
             <div class="experience-detail">
-              <div class="experience-visual" data-visual="teaching" aria-hidden="true"><i class="fas fa-laptop-code"></i></div>
+              <button class="experience-visual" type="button" data-visual="teaching">
+                <img src="assets/images/experience/橘蘋上課截圖.png" alt="橘子蘋果程式學苑課堂截圖">
+              </button>
               <div>
                 <h4>課程與教學現場</h4>
                 <p>把抽象的程式概念拆成可操作的練習，依學生程度調整 APCS、Python 與網頁課程節奏。</p>
@@ -152,7 +154,9 @@
               <p>協助資料探勘與大數據分析課程之設計、作業評分與 Python 輔導。</p>
             </summary>
             <div class="experience-detail">
-              <div class="experience-visual" data-visual="lab" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
+              <button class="experience-visual" type="button" data-visual="lab">
+                <img src="assets/images/experience/中興助教.png" alt="國立中興大學助教課程畫面">
+              </button>
               <div>
                 <h4>資料分析課程支援</h4>
                 <p>協助學生把資料前處理、模型訓練與結果解讀串成完整分析流程。</p>
@@ -171,7 +175,9 @@
               <p>規劃互動式 Python 課程，帶領高中學生理解資料探勘與機器學習概念。</p>
             </summary>
             <div class="experience-detail">
-              <div class="experience-visual" data-visual="workshop" aria-hidden="true"><i class="fas fa-chalkboard-user"></i></div>
+              <button class="experience-visual" type="button" data-visual="workshop">
+                <img src="assets/images/experience/AI%20工作坊講師.jpg" alt="AI 工作坊講師現場照片">
+              </button>
               <div>
                 <h4>AI 工作坊設計</h4>
                 <p>將資料科學與機器學習概念轉成高中生能立即操作的實作活動。</p>
@@ -186,11 +192,13 @@
           <details class="timeline-card experience-card">
             <summary>
               <span class="timeline-badge">Feb 2026 - Mar 2026</span>
-              <h3>AI 實習生 / 健細胞科技股份有限公司</h3>
+              <h3>Cancell公司 AI 實習生 / Insight 平台與 LINE Bot</h3>
               <p>協助開發傷口影像辨識模型，並將 Insight 平台功能整合至 LINE Bot。</p>
             </summary>
             <div class="experience-detail">
-              <div class="experience-visual" data-visual="medical" aria-hidden="true"><i class="fas fa-notes-medical"></i></div>
+              <button class="experience-visual" type="button" data-visual="medical">
+                <img src="assets/images/experience/insight平台-linebot.jpg" alt="Cancell Insight 平台與 LINE Bot 整合畫面">
+              </button>
               <div>
                 <h4>影像辨識與產品整合</h4>
                 <p>協助把醫療影像辨識模型與既有平台流程整合，讓模型輸出能接到使用情境。</p>
@@ -205,11 +213,13 @@
           <details class="timeline-card experience-card">
             <summary>
               <span class="timeline-badge">Feb 2024 - Jun 2024</span>
-              <h3>軟體工程實習生 / 國泰人壽軟體開發部門</h3>
+              <h3>軟體工程實習生 / 國泰人壽軟體桃園開發中心</h3>
               <p>參與逆向工程專案，開發 Java Method 自動轉換為 SPEC 文件功能。</p>
             </summary>
             <div class="experience-detail">
-              <div class="experience-visual" data-visual="engineering" aria-hidden="true"><i class="fas fa-code-branch"></i></div>
+              <button class="experience-visual" type="button" data-visual="engineering">
+                <img src="assets/images/experience/CODE2SPEC.png" alt="CODE2SPEC 文件自動化畫面">
+              </button>
               <div>
                 <h4>軟體文件自動化</h4>
                 <p>參與 Java method 分析與 SPEC 文件生成流程，協助團隊降低文件整理成本。</p>
@@ -510,13 +520,13 @@
 
   </script>
   <script src="assets/js/writing.js?v=20260617-articles"></script>
-  <script src="assets/js/site-interactions.js"></script>
-  <script src="assets/js/site-language.js?v=20260617-articles"></script>
+  <script src="assets/js/site-interactions.js?v=20260617-experience-lightbox"></script>
+  <script src="assets/js/site-language.js?v=20260617-experience"></script>
   <div class="certificate-lightbox" data-certificate-lightbox hidden>
-    <button class="lightbox-backdrop" type="button" data-lightbox-close aria-label="Close certificate preview"></button>
+    <button class="lightbox-backdrop" type="button" data-lightbox-close aria-label="Close image preview"></button>
     <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="certificate-lightbox-title">
       <div class="lightbox-head">
-        <h2 id="certificate-lightbox-title">Certificate</h2>
+        <h2 id="certificate-lightbox-title">Image Preview</h2>
         <button type="button" data-lightbox-close aria-label="Close"><i class="fas fa-xmark"></i></button>
       </div>
       <div class="lightbox-body" data-lightbox-body></div>

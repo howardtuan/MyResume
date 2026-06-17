@@ -26,8 +26,8 @@
         ["Programming Instructor / Orange Apple Programming School", "Teaching APCS, Scratch, Python, JavaScript, HTML, Database, Algorithm, and AI while helping students build programming fundamentals and problem-solving confidence."],
         ["Teaching Assistant / NCHU MIS", "Assisting graduate and undergraduate courses, supporting Python instruction, assignments, and in-class technical guidance."],
         ["AI Workshop Instructor / NCHU MIS", "Designed and delivered Python and AI teaching sessions for students, connecting implementation concepts with hands-on practice."],
-        ["AI Intern / Insight & LINE Bot Workflow", "Worked on AI-assisted workflow experiments and LINE Bot integration, translating prototype ideas into usable product flows."],
-        ["Software Engineering Intern / Java SPEC Workflow", "Supported Java method analysis and SPEC-oriented development tasks in a software engineering context."]
+        ["AI Intern / Cancell Company Insight Platform & LINE Bot", "Worked on AI-assisted workflow experiments and LINE Bot integration, translating prototype ideas into usable product flows."],
+        ["Software Engineering Intern / Cathay Life Taoyuan Software Development Center", "Supported Java method analysis and SPEC-oriented development tasks in a software engineering context."]
       ],
       experienceDetails: [
         ["Course and classroom practice", "I break abstract programming concepts into concrete exercises, adjusting APCS, Python, and web lessons to each student's level.", ["Designed progressive exercises and project tasks to build transferable problem-solving ability.", "Guided students through algorithms, data structures, and basic AI concepts.", "Turned classroom feedback into more stable teaching flows and examples."]],
@@ -93,8 +93,8 @@
         ["兒童程式設計老師 / 橘子蘋果程式學苑", "教授 APCS、Scratch、Python、JavaScript、HTML、Database、Algorithm 與 AI，協助學生建立程式基礎與解題能力。"],
         ["教學助理 / 國立中興大學資訊管理研究所", "協助研究所與大學部課程，支援 Python 教學、作業與課堂技術引導。"],
         ["AI 工作坊講師 / 國立中興大學資訊管理學系", "設計並講授 Python 與 AI 實作課程，讓學生能把概念接到實際操作。"],
-        ["AI 實習 / Insight 與 LINE Bot 流程", "參與 AI 輔助流程與 LINE Bot 整合實驗，將原型想法轉成可操作的產品流程。"],
-        ["軟體工程實習 / Java SPEC 流程", "協助 Java method 分析與 SPEC 導向開發工作。"]
+        ["Cancell公司 AI 實習 / Insight 平台與 LINE Bot 流程", "參與 AI 輔助流程與 LINE Bot 整合實驗，將原型想法轉成可操作的產品流程。"],
+        ["軟體工程實習 / 國泰人壽軟體桃園開發中心", "協助 Java method 分析與 SPEC 導向開發工作。"]
       ],
       experienceDetails: [
         ["課程與教學現場", "把抽象的程式概念拆成可操作的練習，依學生程度調整 APCS、Python 與網頁課程節奏。", ["設計循序練習與專題任務，協助學生建立可遷移的解題能力。", "帶領學生理解演算法、資料結構與基礎 AI 概念。", "將教學回饋整理成更穩定的課堂流程與範例素材。"]],

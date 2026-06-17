@@ -101,7 +101,7 @@
     });
   };
 
-  const setupCertificateLightbox = () => {
+  const setupMediaLightbox = () => {
     const lightbox = document.querySelector("[data-certificate-lightbox]");
     const title = document.getElementById("certificate-lightbox-title");
     const body = document.querySelector("[data-lightbox-body]");
@@ -114,9 +114,7 @@
       body.replaceChildren();
     };
 
-    const open = (card) => {
-      const image = card.dataset.certificateImage?.trim();
-      const label = card.dataset.certificateTitle || card.querySelector("strong")?.textContent || "Certificate";
+    const openImage = (image, label) => {
       title.textContent = label;
       body.replaceChildren();
 
@@ -136,7 +134,25 @@
     };
 
     document.querySelectorAll(".certificate-card").forEach((card) => {
-      card.addEventListener("click", () => open(card));
+      card.addEventListener("click", () => {
+        const image = card.dataset.certificateImage?.trim();
+        const label = card.dataset.certificateTitle || card.querySelector("strong")?.textContent || "Certificate";
+        openImage(image, label);
+      });
+    });
+
+    document.querySelectorAll(".experience-visual").forEach((button) => {
+      const image = button.querySelector("img");
+      if (!image) {
+        return;
+      }
+
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        const card = button.closest(".experience-card");
+        const label = card?.querySelector("h3")?.textContent?.trim() || image.alt || "Experience photo";
+        openImage(image.currentSrc || image.src, label);
+      });
     });
 
     document.querySelectorAll("[data-lightbox-close]").forEach((button) => {
@@ -155,6 +171,6 @@
     setupPager("projects");
     setupPager("certificates");
     setupCertificateImages();
-    setupCertificateLightbox();
+    setupMediaLightbox();
   });
 }());

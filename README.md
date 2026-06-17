@@ -70,6 +70,18 @@ filters: ["全部", "Medium", "HackMD", "技術實作", "ZeroJudge", "LeetCode",
 
 如果只是更新內容，直接用新 PDF 覆蓋 `resume/mycv_eng.pdf` 或 `resume/mycv_chi.pdf` 即可。如果改檔名，就要同步更新兩個 HTML 裡的 `href`。
 
+## 如何更新工作經驗照片
+
+工作經驗展開後的圖片放在 `assets/images/experience/`。每一段 experience 的圖片在 `index.html` 的 `#experience` 區塊：
+
+```html
+<button class="experience-visual" type="button" data-visual="teaching">
+  <img src="assets/images/experience/橘蘋上課截圖.png" alt="橘子蘋果程式學苑課堂截圖">
+</button>
+```
+
+替換圖片時，把新圖放進 `assets/images/experience/`，再更新對應的 `img src` 和 `alt`。這些圖片會自動變成可點擊的大圖預覽，邏輯在 `assets/js/site-interactions.js`。如果有更新工作經驗標題或描述，也要同步 `assets/js/site-language.js` 裡的 `home.en.experience` 與 `home.zh.experience`，因為網站載入後會依語言覆蓋畫面文字。
+
 ## 如何更新 Banner 背景輪播照片
 
 首頁背景輪播照片放在 `assets/images/hero-carousel/`。目前有五張圖：
