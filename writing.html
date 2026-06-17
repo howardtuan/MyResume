@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Howard Tuan articles, Medium posts, and HackMD notes.">
+  <title>Howard Tuan Writing</title>
+
+  <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/resume.css">
+</head>
+<body id="top" class="writing-page">
+  <a href="#main" class="skip-link">跳到主要內容</a>
+  <div class="scroll-indicator"></div>
+
+  <header id="header" class="page-header-shell">
+    <nav class="index-navbar" aria-label="主要導覽">
+      <div class="nav-shell">
+        <div class="nav-home">
+          <a href="index.html#top"><i class="fas fa-home"></i><span>Home</span></a>
+        </div>
+        <div class="nav-center">
+          <a href="index.html#profile">PROFILE</a>
+          <a href="index.html#education">EDUCATION</a>
+          <a href="index.html#experience">EXPERIENCE</a>
+          <a href="index.html#projects">PROJECTS</a>
+          <a href="index.html#writing">WRITING</a>
+          <a href="index.html#certifications">CERTIFICATIONS</a>
+          <a href="index.html#contact">CONTACT</a>
+        </div>
+        <div class="nav-actions">
+          <a href="resume/mycv_eng.pdf" target="_blank" rel="noopener noreferrer" data-i18n="resumeEn">Resume EN</a>
+          <a href="resume/mycv_chi.pdf" target="_blank" rel="noopener noreferrer" data-i18n="resumeZh">履歷中文</a>
+          <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
+          <a href="https://github.com/howardtuan" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="article-main" role="main">
+    <section class="article-hero">
+      <div class="article-hero-copy">
+        <a class="back-link" href="index.html#writing"><i class="fas fa-arrow-left"></i> Back to resume</a>
+        <h1>All Articles</h1>
+        <p>Medium essays and HackMD research notes for medical imaging AI, RAG systems, product experiments, and teaching workflows.</p>
+      </div>
+      <div class="article-stats">
+        <div>
+          <strong data-article-count>11</strong>
+          <span>Visible</span>
+        </div>
+        <div>
+          <strong>2</strong>
+          <span>Platforms</span>
+        </div>
+        <div>
+          <strong>3</strong>
+          <span>Categories</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="writing-lab" aria-label="文章連結預覽">
+      <article class="writing-composer" data-platform="medium">
+        <div class="writing-head">
+          <span class="platform-mark medium-mark" aria-hidden="true"><i class="fab fa-medium"></i></span>
+          <div>
+            <h2>Medium</h2>
+            <p>Article preview composer</p>
+          </div>
+        </div>
+        <label for="medium-url">Article link</label>
+        <div class="link-field">
+          <input id="medium-url" type="url" value="https://medium.com/@HowardTuan/openai-whisper-影片字幕生成教學-cc字幕-5bb7aa3fd530" placeholder="Paste article link">
+          <button type="button" data-preview-target="medium">Preview</button>
+        </div>
+        <div class="article-preview" id="medium-preview" aria-live="polite"></div>
+      </article>
+
+      <article class="writing-composer" data-platform="hackmd">
+        <div class="writing-head">
+          <span class="platform-mark hackmd-mark" aria-hidden="true"><i class="fas fa-file-lines"></i></span>
+          <div>
+            <h2>HackMD</h2>
+            <p>Note preview composer</p>
+          </div>
+        </div>
+        <label for="hackmd-url">Article link</label>
+        <div class="link-field">
+          <input id="hackmd-url" type="url" value="https://hackmd.io/@HowN/name-card-bot" placeholder="Paste article link">
+          <button type="button" data-preview-target="hackmd">Preview</button>
+        </div>
+        <div class="article-preview" id="hackmd-preview" aria-live="polite"></div>
+      </article>
+    </section>
+
+    <section class="article-controls" aria-label="文章搜尋與篩選">
+      <div class="search-field">
+        <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+        <input id="article-search" type="search" placeholder="Search articles">
+      </div>
+      <div class="filter-tabs">
+        <button type="button" class="is-active" data-article-filter="all">All</button>
+        <button type="button" data-article-filter="medium">Medium</button>
+        <button type="button" data-article-filter="hackmd">HackMD</button>
+        <button type="button" data-article-filter="tech">Tech</button>
+        <button type="button" data-article-filter="zerojudge">ZeroJudge</button>
+        <button type="button" data-article-filter="leetcode">LeetCode</button>
+      </div>
+    </section>
+
+    <section class="section article-featured" aria-label="精選文章">
+      <div class="split-section-head">
+        <h2 class="section-title">
+          <span>FEATURED</span>
+        </h2>
+      </div>
+      <div class="article-strip" data-featured-articles data-limit="3"></div>
+    </section>
+
+    <section class="section article-index" aria-label="所有文章">
+      <h2 class="section-title">
+        <span>LIBRARY</span>
+      </h2>
+      <div class="article-library" data-article-library></div>
+    </section>
+  </main>
+
+  <footer id="underfooter">
+    <div class="footer-shell" id="contact">
+      <div>
+        <h4>CONTACT</h4>
+        <p>howardtuan@gmail.com</p>
+        <p>0987-449-120</p>
+        <p>Taipei, Taiwan</p>
+      </div>
+      <div>
+        <h4>FOLLOW ME</h4>
+        <p><a href="https://github.com/howardtuan" target="_blank" rel="noopener noreferrer">github.com/howardtuan</a></p>
+      </div>
+      <div>
+        <h4>TOP PROJECT</h4>
+        <p><a href="https://snapdiet.zeabur.app/site/" target="_blank" rel="noopener noreferrer">SnapDiet</a></p>
+      </div>
+      <div>
+        <h4>NOW WORKING</h4>
+        <p>Medical Imaging AI</p>
+        <p>RAG Systems</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 Howard Tuan</p>
+    </div>
+  </footer>
+
+  <script>
+    const indicator = document.querySelector(".scroll-indicator");
+    window.addEventListener("scroll", () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = max > 0 ? window.scrollY / max : 0;
+      indicator.style.transform = "scaleX(" + ratio + ")";
+    });
+  </script>
+  <script src="assets/js/writing.js"></script>
+  <script src="assets/js/site-language.js"></script>
+</body>
+</html>

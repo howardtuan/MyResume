@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/resume.css">
 </head>
-<body class="home">
+<body id="top" class="home">
   <a href="#main" class="skip-link">跳至主要內容</a>
   <div class="scroll-indicator"></div>
 
@@ -42,15 +42,18 @@
           <a href="#top"><i class="fas fa-home"></i><span>Home</span></a>
         </div>
         <div class="nav-center">
-          <a href="#profile">PROFILE</a>
-          <a href="#education">EDUCATION</a>
-          <a href="#experience">EXPERIENCE</a>
-          <a href="#projects">PROJECTS</a>
-          <a href="#certifications">CERTIFICATIONS</a>
-          <a href="#contact">CONTACT</a>
+          <a href="index.html#profile">PROFILE</a>
+          <a href="index.html#education">EDUCATION</a>
+          <a href="index.html#experience">EXPERIENCE</a>
+          <a href="index.html#projects">PROJECTS</a>
+          <a href="#writing">WRITING</a>
+          <a href="index.html#certifications">CERTIFICATIONS</a>
+          <a href="index.html#contact">CONTACT</a>
         </div>
         <div class="nav-actions">
-          <a href="resume/mycv_chi.pdf" target="_blank" rel="noopener noreferrer">中文履歷</a>
+          <a href="resume/mycv_eng.pdf" target="_blank" rel="noopener noreferrer" data-i18n="resumeEn">Resume EN</a>
+          <a href="resume/mycv_chi.pdf" target="_blank" rel="noopener noreferrer" data-i18n="resumeZh">履歷中文</a>
+          <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
           <a href="https://github.com/howardtuan" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
@@ -155,7 +158,7 @@
           <span>PROJECTS</span>
         </h2>
         <div class="project-grid">
-          <details class="project-tile" open>
+          <details class="project-tile">
             <summary>
               <span class="project-chip">Master Thesis</span>
               <h3>甲狀腺超音波結節偵測、分割與分類研究</h3>
@@ -291,6 +294,23 @@
         </div>
       </section>
 
+      <section class="section topspace writing-section writing-home" id="writing" aria-label="文章與筆記">
+        <div class="split-section-head">
+          <h2 class="section-title">
+            <span>WRITING</span>
+          </h2>
+          <a class="glass-link" href="writing.html">View More</a>
+        </div>
+        <div class="writing-intro">
+          <div>
+            <h3>Medium / HackMD</h3>
+            <p>把長篇技術文章、研究筆記、教學 memo 集中到獨立頁面，首頁只保留最新與精選內容。</p>
+          </div>
+          <a class="glass-link primary-link" href="writing.html">Open Full Library</a>
+        </div>
+        <div class="article-strip" data-featured-articles data-limit="3"></div>
+      </section>
+
       <section class="section topspace" id="certifications" aria-label="證照與競賽">
         <h2 class="section-title">
           <span>CERTIFICATIONS</span>
@@ -355,6 +375,9 @@
       const ratio = max > 0 ? window.scrollY / max : 0;
       indicator.style.transform = "scaleX(" + ratio + ")";
     });
+
   </script>
+  <script src="assets/js/writing.js"></script>
+  <script src="assets/js/site-language.js"></script>
 </body>
 </html>
