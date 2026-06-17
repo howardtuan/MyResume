@@ -1,9 +1,125 @@
 (function () {
-  // 更新文章時只需要維護這個陣列：
-  // 1. 新增一篇文章就複製一個物件，填入 platform、categoryKey、category、title、url、excerpt、tags。
-  // 2. categoryKey 目前支援 tech、zerojudge、leetcode；如果新增分類，記得同步 writing.html 的 filter button。
-  // 3. 首頁精選由 featured 控制；設為 true 的文章會出現在首頁文章區塊，data-limit 會限制數量。
-  // 4. 不需要改 HTML 卡片，首頁與完整文章頁都會自動從這裡渲染。
+  // 更新文章時主要維護下方幾個清單：
+  // 1. Medium / 技術實作文章放在 articles 開頭的完整物件。
+  // 2. ZeroJudge 只要新增 slug 到 zeroJudgeNotes，例如 apcs_a290。
+  // 3. LeetCode 只要新增 slug 到 leetCodeNotes，例如 leetcode_001。
+  // 4. 資訊分享或新分類請新增 categoryKey，並同步 writing.html 的 filter button 與 site-language.js 的 filters。
+  // 5. 首頁精選由 featured 控制；設為 true 的文章會出現在首頁文章區塊，data-limit 會限制數量。
+  const zeroJudgeNotes = [
+    "apcs_c463",
+    "apcs_d768_DFS",
+    "apcs_d768_BFS",
+    "apcs_d406",
+    "apcs_a290",
+    "apcs_d378",
+    "apcs_d904_v2",
+    "apcs_d418",
+    "apcs_d221",
+    "apcs_d904",
+    "apcs_e591",
+    "apcs_d732",
+    "apcs_d673",
+    "apcs_d481",
+    "apcs_e605",
+    "apcs_f149",
+    "apcs_b519",
+    "apcs_d150",
+    "apcs_e283",
+    "apcs_a471",
+    "apcs_a227",
+    "apcs_d487",
+    "apcs_e357",
+    "apcs_f607",
+    "apcs_f606"
+  ];
+
+  const leetCodeNotes = [
+    "leetcode_122",
+    "leetcode_2962",
+    "leetcode_041",
+    "leetcode_143",
+    "leetcode_234",
+    "leetcode_452",
+    "leetcode_057",
+    "leetcode_525",
+    "leetcode_930",
+    "leetcode_1171",
+    "leetcode_231",
+    "leetcode_1768",
+    "leetcode_028",
+    "leetcode_053",
+    "leetcode_238",
+    "leetcode_217",
+    "leetcode_121",
+    "leetcode_007",
+    "leetcode_005",
+    "leetcode_003",
+    "leetcode_002",
+    "leetcode_088",
+    "leetcode_083",
+    "leetcode_070",
+    "leetcode_069",
+    "leetcode_067",
+    "leetcode_066",
+    "leetcode_058",
+    "leetcode_035",
+    "leetcode_027",
+    "leetcode_026",
+    "leetcode_021",
+    "leetcode_020",
+    "leetcode_014",
+    "leetcode_001",
+    "leetcode_009",
+    "leetcode_013"
+  ];
+
+  const unique = (items) => [...new Set(items)];
+
+  const formatApcsCode = (slug) => slug
+    .replace(/^apcs_/, "")
+    .replace(/_/g, " ")
+    .replace(/\bdfs\b/i, "DFS")
+    .replace(/\bbfs\b/i, "BFS")
+    .replace(/\bv2\b/i, "v2");
+
+  const formatLeetCodeNumber = (slug) => {
+    const rawNumber = slug.replace(/^leetcode_/, "");
+    return {
+      rawNumber,
+      displayNumber: String(Number(rawNumber))
+    };
+  };
+
+  const zeroJudgeArticle = (slug) => {
+    const code = formatApcsCode(slug);
+    return {
+      platform: "HackMD",
+      categoryKey: "zerojudge",
+      category: "Algorithm / ZeroJudge",
+      title: `APCS ${code} 解題筆記`,
+      url: `https://hackmd.io/@HowN/${slug}`,
+      excerpt: `ZeroJudge / APCS ${code} 解題紀錄，整理題意拆解、資料結構選擇與實作細節，方便回頭複習。`,
+      date: "HackMD",
+      read: "Algorithm note",
+      tags: ["APCS", "ZeroJudge", code]
+    };
+  };
+
+  const leetCodeArticle = (slug) => {
+    const number = formatLeetCodeNumber(slug);
+    return {
+      platform: "HackMD",
+      categoryKey: "leetcode",
+      category: "Algorithm / LeetCode",
+      title: `LeetCode ${number.displayNumber} 解題筆記`,
+      url: `https://hackmd.io/@HowN/${slug}`,
+      excerpt: `LeetCode ${number.displayNumber} 解題紀錄，整理題型觀察、解法思路與邊界條件。`,
+      date: "HackMD",
+      read: "Algorithm note",
+      tags: ["LeetCode", number.rawNumber, "Algorithm"]
+    };
+  };
+
   const articles = [
     {
       platform: "Medium",
@@ -41,93 +157,18 @@
       tags: ["Bot", "Automation", "Project"],
       featured: true
     },
+    ...unique(zeroJudgeNotes).map(zeroJudgeArticle),
+    ...unique(leetCodeNotes).map(leetCodeArticle),
     {
       platform: "HackMD",
-      categoryKey: "zerojudge",
-      category: "Algorithm / ZeroJudge",
-      title: "APCS c463 解題筆記",
-      url: "https://hackmd.io/@HowN/apcs_c463",
-      excerpt: "ZeroJudge / APCS 題目解題紀錄，整理題意拆解、實作方向與容易踩到的細節。",
+      categoryKey: "info",
+      category: "Information Sharing",
+      title: "NoteForIM 資訊管理學習筆記",
+      url: "https://hackmd.io/@HowN/NoteForIM",
+      excerpt: "HackMD 資訊分享文章，整理資訊管理學習、課程與相關資源筆記。",
       date: "HackMD",
-      read: "Algorithm note",
-      tags: ["APCS", "ZeroJudge", "Practice"]
-    },
-    {
-      platform: "HackMD",
-      categoryKey: "zerojudge",
-      category: "Algorithm / ZeroJudge",
-      title: "APCS d768 DFS 解題筆記",
-      url: "https://hackmd.io/@HowN/apcs_d768_DFS",
-      excerpt: "以 DFS 思路整理 d768 題目的搜尋流程、狀態設計與遞迴實作重點。",
-      date: "HackMD",
-      read: "Algorithm note",
-      tags: ["APCS", "DFS", "ZeroJudge"]
-    },
-    {
-      platform: "HackMD",
-      categoryKey: "zerojudge",
-      category: "Algorithm / ZeroJudge",
-      title: "APCS d768 BFS 解題筆記",
-      url: "https://hackmd.io/@HowN/apcs_d768_BFS",
-      excerpt: "以 BFS 思路整理 d768 題目的層序搜尋、queue 狀態與替代解法比較。",
-      date: "HackMD",
-      read: "Algorithm note",
-      tags: ["APCS", "BFS", "ZeroJudge"]
-    },
-    {
-      platform: "HackMD",
-      categoryKey: "zerojudge",
-      category: "Algorithm / ZeroJudge",
-      title: "APCS d406 解題筆記",
-      url: "https://hackmd.io/@HowN/apcs_d406",
-      excerpt: "ZeroJudge d406 解題筆記，聚焦資料結構選擇、條件判斷與可讀性較高的實作方式。",
-      date: "HackMD",
-      read: "Algorithm note",
-      tags: ["APCS", "ZeroJudge", "Implementation"]
-    },
-    {
-      platform: "HackMD",
-      categoryKey: "leetcode",
-      category: "Algorithm / LeetCode",
-      title: "LeetCode 122：Best Time to Buy and Sell Stock II",
-      url: "https://hackmd.io/@HowN/leetcode_122",
-      excerpt: "LeetCode 122 解題紀錄，整理貪心策略與股票買賣題型的直覺推導。",
-      date: "HackMD",
-      read: "Algorithm note",
-      tags: ["LeetCode", "Greedy", "Array"]
-    },
-    {
-      platform: "HackMD",
-      categoryKey: "leetcode",
-      category: "Algorithm / LeetCode",
-      title: "LeetCode 28：Find the Index of the First Occurrence in a String",
-      url: "https://hackmd.io/@HowN/leetcode_028",
-      excerpt: "LeetCode 28 解題筆記，整理字串搜尋的基本思路、邊界條件與實作細節。",
-      date: "HackMD",
-      read: "Algorithm note",
-      tags: ["LeetCode", "String", "Search"]
-    },
-    {
-      platform: "HackMD",
-      categoryKey: "leetcode",
-      category: "Algorithm / LeetCode",
-      title: "LeetCode 53：Maximum Subarray",
-      url: "https://hackmd.io/@HowN/leetcode_053",
-      excerpt: "LeetCode 53 解題筆記，整理 Kadane's Algorithm、狀態轉移與最大連續子陣列的判斷方式。",
-      date: "HackMD",
-      read: "Algorithm note",
-      tags: ["LeetCode", "DP", "Array"]
-    },
-    {
-      platform: "HackMD",
-      categoryKey: "leetcode",
-      category: "Algorithm / LeetCode",
-      title: "LeetCode 67：Add Binary",
-      url: "https://hackmd.io/@HowN/leetcode_067",
-      excerpt: "LeetCode 67 解題筆記，整理二進位字串加法、進位處理與迴圈邊界。",
-      date: "HackMD",
-      read: "Algorithm note",
-      tags: ["LeetCode", "Binary", "String"]
+      read: "Info note",
+      tags: ["Information Management", "Sharing", "HackMD"]
     }
   ];
 
@@ -244,7 +285,7 @@
       const matchesFilter = activeFilter === "all"
         || article.platform.toLowerCase() === activeFilter
         || article.categoryKey === activeFilter;
-      const haystack = [article.title, article.excerpt, article.platform, article.category, article.tags.join(" ")].join(" ").toLowerCase();
+      const haystack = [article.title, article.excerpt, article.platform, article.category, article.url, article.tags.join(" ")].join(" ").toLowerCase();
       return matchesFilter && (!query || haystack.includes(query));
     });
 

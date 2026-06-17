@@ -19,6 +19,7 @@
 
   <header id="header">
     <div id="head">
+      <div class="hero-carousel" data-hero-carousel aria-hidden="true"></div>
       <div class="head-overlay"></div>
       <div class="hero-shell">
         <h1 id="logo" class="text-center">
@@ -47,7 +48,7 @@
           <a href="index.html#experience">EXPERIENCE</a>
           <a href="index.html#projects">PROJECTS</a>
           <a href="#writing">WRITING</a>
-          <a href="index.html#certifications">CERTIFICATIONS</a>
+          <a href="index.html#certifications">CERTIFICATES</a>
           <a href="index.html#contact">CONTACT</a>
         </div>
         <div class="nav-actions">
@@ -110,7 +111,7 @@
             <time>2020 - 2024</time>
             <h3>中原大學 資訊管理學系</h3>
             <p>畢業排名 12/113，平均成績 88.31，GPA 3.92/4。</p>
-            <p>畢業專題：話中有畫 Talk2Draw。</p>
+            <p>畢業專題：話中有畫。</p>
           </article>
           <article class="info-card">
             <time>2017 - 2020</time>
@@ -125,31 +126,101 @@
           <span>WORK EXPERIENCE</span>
         </h2>
         <div class="timeline-wrap">
-          <article class="timeline-card">
-            <div class="timeline-badge">Dec 2021 - Now</div>
-            <h3>兒童程式設計老師 / 橘子蘋果程式學苑</h3>
-            <p>教授 APCS、Scratch、Python、JavaScript、HTML、Database、Algorithm 與 AI，協助學生建立程式基礎與解題能力。</p>
-          </article>
-          <article class="timeline-card">
-            <div class="timeline-badge">Sep 2024 - Jul 2026</div>
-            <h3>教學助理 / 精準醫學與臨床轉譯研究實驗室</h3>
-            <p>協助資料探勘與大數據分析課程之設計、作業評分與 Python 輔導。</p>
-          </article>
-          <article class="timeline-card">
-            <div class="timeline-badge">Dec 2025 & Jan 2026</div>
-            <h3>AI 與資料科學工作坊講師 / 國立中興大學附中</h3>
-            <p>規劃互動式 Python 課程，帶領高中學生理解資料探勘與機器學習概念。</p>
-          </article>
-          <article class="timeline-card">
-            <div class="timeline-badge">Feb 2026 - Mar 2026</div>
-            <h3>AI 實習生 / 健細胞科技股份有限公司</h3>
-            <p>協助開發傷口影像辨識模型，並將 Insight 平台功能整合至 LINE Bot。</p>
-          </article>
-          <article class="timeline-card">
-            <div class="timeline-badge">Feb 2024 - Jun 2024</div>
-            <h3>軟體工程實習生 / 國泰人壽軟體開發部門</h3>
-            <p>參與逆向工程專案，開發 Java Method 自動轉換為 SPEC 文件功能。</p>
-          </article>
+          <details class="timeline-card experience-card">
+            <summary>
+              <span class="timeline-badge">Dec 2021 - Now</span>
+              <h3>兒童程式設計老師 / 橘子蘋果程式學苑</h3>
+              <p>教授 APCS、Scratch、Python、JavaScript、HTML、Database、Algorithm 與 AI，協助學生建立程式基礎與解題能力。</p>
+            </summary>
+            <div class="experience-detail">
+              <div class="experience-visual" data-visual="teaching" aria-hidden="true"><i class="fas fa-laptop-code"></i></div>
+              <div>
+                <h4>課程與教學現場</h4>
+                <p>把抽象的程式概念拆成可操作的練習，依學生程度調整 APCS、Python 與網頁課程節奏。</p>
+                <ul>
+                  <li>設計循序練習與專題任務，協助學生建立可遷移的解題能力。</li>
+                  <li>帶領學生理解演算法、資料結構與基礎 AI 概念。</li>
+                  <li>將教學回饋整理成更穩定的課堂流程與範例素材。</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+          <details class="timeline-card experience-card">
+            <summary>
+              <span class="timeline-badge">Sep 2024 - Jul 2026</span>
+              <h3>教學助理 / 精準醫學與臨床轉譯研究實驗室</h3>
+              <p>協助資料探勘與大數據分析課程之設計、作業評分與 Python 輔導。</p>
+            </summary>
+            <div class="experience-detail">
+              <div class="experience-visual" data-visual="lab" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
+              <div>
+                <h4>資料分析課程支援</h4>
+                <p>協助學生把資料前處理、模型訓練與結果解讀串成完整分析流程。</p>
+                <ul>
+                  <li>支援 Python、資料探勘與大數據分析課程作業。</li>
+                  <li>協助整理題目規格、評分標準與常見錯誤。</li>
+                  <li>以回饋方式幫助學生修正資料處理與程式邏輯。</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+          <details class="timeline-card experience-card">
+            <summary>
+              <span class="timeline-badge">Dec 2025 & Jan 2026</span>
+              <h3>AI 與資料科學工作坊講師 / 國立中興大學附中</h3>
+              <p>規劃互動式 Python 課程，帶領高中學生理解資料探勘與機器學習概念。</p>
+            </summary>
+            <div class="experience-detail">
+              <div class="experience-visual" data-visual="workshop" aria-hidden="true"><i class="fas fa-chalkboard-user"></i></div>
+              <div>
+                <h4>AI 工作坊設計</h4>
+                <p>將資料科學與機器學習概念轉成高中生能立即操作的實作活動。</p>
+                <ul>
+                  <li>規劃互動式 Python 實作，降低第一次接觸 AI 的門檻。</li>
+                  <li>用資料集與模型結果引導學生理解資料探勘流程。</li>
+                  <li>把課程拆成概念、實作、討論與成果整理四段。</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+          <details class="timeline-card experience-card">
+            <summary>
+              <span class="timeline-badge">Feb 2026 - Mar 2026</span>
+              <h3>AI 實習生 / 健細胞科技股份有限公司</h3>
+              <p>協助開發傷口影像辨識模型，並將 Insight 平台功能整合至 LINE Bot。</p>
+            </summary>
+            <div class="experience-detail">
+              <div class="experience-visual" data-visual="medical" aria-hidden="true"><i class="fas fa-notes-medical"></i></div>
+              <div>
+                <h4>影像辨識與產品整合</h4>
+                <p>協助把醫療影像辨識模型與既有平台流程整合，讓模型輸出能接到使用情境。</p>
+                <ul>
+                  <li>參與傷口影像資料整理與辨識模型開發。</li>
+                  <li>協助 Insight 平台功能與 LINE Bot 流程串接。</li>
+                  <li>關注模型結果如何被實際工作流程理解與使用。</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+          <details class="timeline-card experience-card">
+            <summary>
+              <span class="timeline-badge">Feb 2024 - Jun 2024</span>
+              <h3>軟體工程實習生 / 國泰人壽軟體開發部門</h3>
+              <p>參與逆向工程專案，開發 Java Method 自動轉換為 SPEC 文件功能。</p>
+            </summary>
+            <div class="experience-detail">
+              <div class="experience-visual" data-visual="engineering" aria-hidden="true"><i class="fas fa-code-branch"></i></div>
+              <div>
+                <h4>軟體文件自動化</h4>
+                <p>參與 Java method 分析與 SPEC 文件生成流程，協助團隊降低文件整理成本。</p>
+                <ul>
+                  <li>分析既有程式碼結構，整理 method 與規格文件之間的對應。</li>
+                  <li>協助建立自動轉換邏輯，讓文件產出更一致。</li>
+                  <li>熟悉企業開發流程中的規格、維護與溝通需求。</li>
+                </ul>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -157,7 +228,7 @@
         <h2 class="section-title">
           <span>PROJECTS</span>
         </h2>
-        <div class="project-grid">
+        <div class="project-grid" data-paginated-grid="projects">
           <details class="project-tile">
             <summary>
               <span class="project-chip">Master Thesis</span>
@@ -175,8 +246,7 @@
                 </ul>
               </div>
               <div class="project-links">
-                <a href="https://github.com/howardtuan/ThyroidCAD-System" target="_blank" rel="noopener noreferrer">GitHub / README</a>
-                <a href="https://github.com/howardtuan/Thyroid-Nodule-Detection-and-Classification-System" target="_blank" rel="noopener noreferrer">Training Repo</a>
+                <button class="project-button-disabled" type="button" disabled data-thesis-button>論文全文</button>
               </div>
             </div>
           </details>
@@ -250,7 +320,7 @@
           <details class="project-tile">
             <summary>
               <span class="project-chip">Graduation Project</span>
-              <h3>話中有畫 Talk2Draw</h3>
+              <h3>話中有畫</h3>
               <p>Django / Web Speech API / Search / Slides / Ollama</p>
             </summary>
             <div class="project-body">
@@ -292,6 +362,11 @@
             </div>
           </details>
         </div>
+        <div class="pagination-controls" data-pager="projects" aria-label="專案分頁">
+          <button type="button" data-page-prev="projects"><i class="fas fa-arrow-left"></i><span>Previous</span></button>
+          <span data-page-status="projects">1 / 1</span>
+          <button type="button" data-page-next="projects"><span>Next</span><i class="fas fa-arrow-right"></i></button>
+        </div>
       </section>
 
       <section class="section topspace writing-section writing-home" id="writing" aria-label="文章與筆記">
@@ -311,31 +386,82 @@
         <div class="article-strip" data-featured-articles data-limit="3"></div>
       </section>
 
-      <section class="section topspace" id="certifications" aria-label="證照與競賽">
+      <section class="section topspace certificates-section" id="certifications" aria-label="獎狀與證書">
         <h2 class="section-title">
-          <span>CERTIFICATIONS</span>
+          <span>AWARDS & CERTIFICATES</span>
         </h2>
-        <div class="card-grid two-col">
-          <article class="info-card">
-            <h3>證照 / 檢定</h3>
-            <ul>
-              <li>TOEIC 745</li>
-              <li>電腦軟體應用乙級 / 丙級</li>
-              <li>網頁設計丙級</li>
-              <li>會計事務人工記帳丙級</li>
-              <li>大數據分析：商業策略課程</li>
-            </ul>
-          </article>
-          <article class="info-card">
-            <h3>競賽亮點</h3>
-            <ul>
-              <li>資訊管理學系專題競賽初賽第一名</li>
-              <li>資料庫班級競賽第一名</li>
-              <li>人工智慧與大數據創意競賽佳作</li>
-              <li>金匠獎程式設計個人賽 / 團體賽決賽</li>
-              <li>2023 數據驅動創新應用大賽入圍複賽</li>
-            </ul>
-          </article>
+        <div class="certificate-grid" data-paginated-grid="certificates">
+          <!-- 新增獎狀時：把圖片放到 assets/images/certificates/，複製一張 certificate-card，並更新 data-certificate-image 與 site-language.js 的中英文文字。 -->
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/TOEIC 745.png" data-certificate-title="TOEIC 745">
+            <span class="certificate-preview"><i class="fas fa-certificate"></i></span>
+            <strong>TOEIC 745</strong>
+            <span>English proficiency certificate</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/畢業專題競賽第一名.png" data-certificate-title="Graduation Project Competition">
+            <span class="certificate-preview"><i class="fas fa-trophy"></i></span>
+            <strong>Graduation Project Competition</strong>
+            <span>First place</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/系統分析與設計_第三名.png" data-certificate-title="Systems Analysis and Design">
+            <span class="certificate-preview"><i class="fas fa-sitemap"></i></span>
+            <strong>Systems Analysis and Design</strong>
+            <span>Third place</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/系統分析與設計_卓越班級獎.png" data-certificate-title="Systems Analysis and Design Excellence">
+            <span class="certificate-preview"><i class="fas fa-award"></i></span>
+            <strong>Systems Analysis and Design</strong>
+            <span>Excellence class award</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/金匠獎個人賽入圍決賽證明.png" data-certificate-title="Golden Craftsman Award Individual Finalist">
+            <span class="certificate-preview"><i class="fas fa-medal"></i></span>
+            <strong>Golden Craftsman Award</strong>
+            <span>Individual finalist</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/金匠獎團體賽入圍決賽證明.png" data-certificate-title="Golden Craftsman Award Team Finalist">
+            <span class="certificate-preview"><i class="fas fa-users"></i></span>
+            <strong>Golden Craftsman Award</strong>
+            <span>Team finalist</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/ChatGPT系統開發黑客松.png" data-certificate-title="ChatGPT System Development Hackathon">
+            <span class="certificate-preview"><i class="fas fa-robot"></i></span>
+            <strong>ChatGPT System Hackathon</strong>
+            <span>System development participation</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/ChatBot黑客松完賽.png" data-certificate-title="ChatBot Hackathon Completion">
+            <span class="certificate-preview"><i class="fas fa-comments"></i></span>
+            <strong>ChatBot Hackathon</strong>
+            <span>Completion certificate</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/112人工智慧與大數據創意競賽 佳作.png" data-certificate-title="AI and Big Data Creative Competition">
+            <span class="certificate-preview"><i class="fas fa-lightbulb"></i></span>
+            <strong>AI and Big Data Competition</strong>
+            <span>Honorable mention</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/數據驅動創新應用大賽_工作坊.png" data-certificate-title="Data-driven Innovation Application Workshop">
+            <span class="certificate-preview"><i class="fas fa-chart-line"></i></span>
+            <strong>Data-driven Innovation</strong>
+            <span>Application workshop</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/資料庫第一.png" data-certificate-title="Database Class Competition">
+            <span class="certificate-preview"><i class="fas fa-database"></i></span>
+            <strong>Database Competition</strong>
+            <span>First place</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/ExcelPowerToolsForDataAnalysis.png" data-certificate-title="Excel Power Tools for Data Analysis">
+            <span class="certificate-preview"><i class="fas fa-table"></i></span>
+            <strong>Excel Power Tools</strong>
+            <span>Data analysis course certificate</span>
+          </button>
+          <button type="button" class="certificate-card" data-certificate-image="assets/images/certificates/系學績優獎第二名.png" data-certificate-title="Department Academic Excellence Award">
+            <span class="certificate-preview"><i class="fas fa-star"></i></span>
+            <strong>Academic Excellence Award</strong>
+            <span>Department second place</span>
+          </button>
+        </div>
+        <div class="pagination-controls" data-pager="certificates" aria-label="獎狀證書分頁">
+          <button type="button" data-page-prev="certificates"><i class="fas fa-arrow-left"></i><span>Previous</span></button>
+          <span data-page-status="certificates">1 / 1</span>
+          <button type="button" data-page-next="certificates"><span>Next</span><i class="fas fa-arrow-right"></i></button>
         </div>
       </section>
     </div>
@@ -351,7 +477,13 @@
       </div>
       <div>
         <h4>FOLLOW ME</h4>
-        <p><a href="https://github.com/howardtuan" target="_blank" rel="noopener noreferrer">github.com/howardtuan</a></p>
+        <div class="social-links" aria-label="Social links">
+          <a href="mailto:howardtuan@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/howardtuan" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/duan.hao.en/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/howardtuan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/howardtuan" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
       </div>
       <div>
         <h4>TOP PROJECT</h4>
@@ -377,7 +509,18 @@
     });
 
   </script>
-  <script src="assets/js/writing.js"></script>
-  <script src="assets/js/site-language.js"></script>
+  <script src="assets/js/writing.js?v=20260617-articles"></script>
+  <script src="assets/js/site-interactions.js"></script>
+  <script src="assets/js/site-language.js?v=20260617-articles"></script>
+  <div class="certificate-lightbox" data-certificate-lightbox hidden>
+    <button class="lightbox-backdrop" type="button" data-lightbox-close aria-label="Close certificate preview"></button>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="certificate-lightbox-title">
+      <div class="lightbox-head">
+        <h2 id="certificate-lightbox-title">Certificate</h2>
+        <button type="button" data-lightbox-close aria-label="Close"><i class="fas fa-xmark"></i></button>
+      </div>
+      <div class="lightbox-body" data-lightbox-body></div>
+    </div>
+  </div>
 </body>
 </html>

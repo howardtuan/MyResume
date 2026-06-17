@@ -10,6 +10,13 @@
         "Programming education and class mentoring",
         "Detection / Segmentation / Classification"
       ],
+      sectionTitles: {
+        education: "EDUCATION",
+        experience: "WORK EXPERIENCE",
+        projects: "PROJECTS",
+        writing: "WRITING",
+        certificates: "AWARDS & CERTIFICATES"
+      },
       education: [
         ["National Chung Hsing University, M.S. in MIS", "Graduate ranking 4/45, average score 92.4, GPA 4.21/4.3.", "Thesis: Deep learning models for thyroid ultrasound nodule detection, segmentation, and benign-malignant classification."],
         ["Chung Yuan Christian University, B.B.A. in MIS", "Graduate ranking 12/113, average score 88.31, GPA 3.92/4.", "Graduation project: Talk2Draw."],
@@ -22,14 +29,22 @@
         ["AI Intern / Insight & LINE Bot Workflow", "Worked on AI-assisted workflow experiments and LINE Bot integration, translating prototype ideas into usable product flows."],
         ["Software Engineering Intern / Java SPEC Workflow", "Supported Java method analysis and SPEC-oriented development tasks in a software engineering context."]
       ],
+      experienceDetails: [
+        ["Course and classroom practice", "I break abstract programming concepts into concrete exercises, adjusting APCS, Python, and web lessons to each student's level.", ["Designed progressive exercises and project tasks to build transferable problem-solving ability.", "Guided students through algorithms, data structures, and basic AI concepts.", "Turned classroom feedback into more stable teaching flows and examples."]],
+        ["Data analysis course support", "I helped students connect preprocessing, modeling, and result interpretation into a complete analysis workflow.", ["Supported Python, data mining, and big data analysis assignments.", "Helped organize assignment specs, grading rubrics, and common mistakes.", "Used feedback to help students correct data processing and code logic."]],
+        ["AI workshop design", "I turned data science and machine learning concepts into hands-on activities for high school students.", ["Planned interactive Python exercises to lower the barrier to AI practice.", "Used datasets and model outputs to explain the data mining workflow.", "Structured the course around concepts, practice, discussion, and recap."]],
+        ["Image AI and product integration", "I helped connect medical image recognition models with platform workflows so outputs could fit real use cases.", ["Worked on wound image data preparation and recognition model development.", "Helped connect Insight platform features with LINE Bot flows.", "Focused on how model outputs can be understood inside practical workflows."]],
+        ["Software documentation automation", "I participated in Java method analysis and SPEC generation flows to reduce documentation overhead.", ["Analyzed code structure and mapped methods to specification documents.", "Helped build automatic conversion logic for more consistent documentation.", "Learned enterprise development needs around specs, maintenance, and communication."]]
+      ],
       projects: [
         ["Thyroid Ultrasound Nodule Detection, Segmentation, and Classification", "YOLOv11 / ResNet50 / Flask GUI / Medical Imaging"],
         ["SnapDiet Nutrition Assistant", "Nutrition assistant / Image-based meal logging / Zeabur"],
         ["OpenPediCare", "Django / AI summary / Parent portal / PDF output"],
         ["OrangeAppleAssistant", "Python desktop app / AI writing assistant / Teaching workflow"],
-        ["Talk2Draw Graduation Project", "Django / Web Speech API / Search / Slides / Ollama"],
+        ["Talk2Draw", "Django / Web Speech API / Search / Slides / Ollama"],
         ["LightRAG Harry Potter / Local AI Teaching Assistant", "Graph retrieval / Local LLM / LlamaIndex / Open WebUI"]
       ],
+      thesisButton: "Full Thesis",
       projectDetails: [
         ["README Summary", "My master's thesis focuses on detecting, segmenting, and classifying thyroid nodules in ultrasound images. The system connects three model modules into a clinical-assistance demo workflow.", ["YOLOv11 locates suspected thyroid nodules.", "ResNet50 / timm classifies ROI images as benign or malignant.", "A Flask GUI turns the research pipeline into a visual workflow."]],
         ["README Summary", "SnapDiet is a nutrition control tool that helps users log meals through photos and chat interactions, then review calories, nutrients, and daily totals.", ["Meal photos lower the friction of daily food tracking.", "Shows calories, protein, fat, carbohydrates, and daily totals.", "The public deployment can be used directly to demonstrate the product experience."]],
@@ -40,19 +55,38 @@
       ],
       writingIntro: ["Medium / HackMD", "Long-form technical essays, research notes, and teaching memos now live in a dedicated article library so the resume page stays focused."],
       writingLinks: ["View More", "Open Full Library"],
-      certs: [
-        ["Certifications / Exams", ["TOEIC 745", "Computer Software Application Technician, Level B / C", "Web Design Technician, Level C", "Accounting Manual Bookkeeping Technician, Level C", "Big Data Analysis: Business Strategy Course"]],
-        ["Competition Highlights", ["First place, MIS graduation project preliminary contest", "First place, database class competition", "Honorable mention, AI and Big Data Creative Competition", "Golden Craftsman Programming Contest finals", "2023 Data-Driven Innovation Application Competition semifinalist"]]
-      ]
+      certificates: [
+        ["TOEIC 745", "English proficiency certificate"],
+        ["Graduation Project Competition", "First place"],
+        ["Systems Analysis and Design", "Third place"],
+        ["Systems Analysis and Design", "Excellence class award"],
+        ["Golden Craftsman Award", "Individual finalist"],
+        ["Golden Craftsman Award", "Team finalist"],
+        ["ChatGPT System Hackathon", "System development participation"],
+        ["ChatBot Hackathon", "Completion certificate"],
+        ["AI and Big Data Competition", "Honorable mention"],
+        ["Data-driven Innovation", "Application workshop"],
+        ["Database Competition", "First place"],
+        ["Excel Power Tools", "Data analysis course certificate"],
+        ["Academic Excellence Award", "Department second place"]
+      ],
+      footerLabels: ["CONTACT", "FOLLOW ME", "TOP PROJECT", "NOW WORKING"]
     },
     zh: {
       title: "段浩恩 Howard Tuan",
       tagline: "國立中興大學資訊管理研究所<br>Medical Imaging AI | RAG Systems | Product-minded Builder",
       profile: "我目前就讀國立中興大學資訊管理研究所，研究與實作主軸放在 <strong>醫療影像 AI、RAG 問答系統、教學工具與可部署產品開發</strong>，也持續在教學與實習現場把技術轉成能被理解、能被操作的流程。",
       metricNotes: ["NCHU MIS 碩士班", "平均成績 92.4", "程式設計教學與帶班", "Detection / Segmentation / Classification"],
+      sectionTitles: {
+        education: "學歷",
+        experience: "工作經驗",
+        projects: "專案",
+        writing: "文章",
+        certificates: "獎狀 / 證書"
+      },
       education: [
         ["國立中興大學 資訊管理學研究所", "畢業排名 4/45，平均成績 92.4，GPA 4.21/4.3。", "論文：基於深度學習模型應用於甲狀腺超音波影像之良惡性結節偵測、分割與分類研究。"],
-        ["中原大學 資訊管理學系", "畢業排名 12/113，平均成績 88.31，GPA 3.92/4。", "畢業專題：話中有畫 Talk2Draw。"],
+        ["中原大學 資訊管理學系", "畢業排名 12/113，平均成績 88.31，GPA 3.92/4。", "畢業專題：話中有畫。"],
         ["新北高工 資料處理科", "科排 6%，建立商管、會計、資料處理與網頁設計基礎。"]
       ],
       experience: [
@@ -62,14 +96,22 @@
         ["AI 實習 / Insight 與 LINE Bot 流程", "參與 AI 輔助流程與 LINE Bot 整合實驗，將原型想法轉成可操作的產品流程。"],
         ["軟體工程實習 / Java SPEC 流程", "協助 Java method 分析與 SPEC 導向開發工作。"]
       ],
+      experienceDetails: [
+        ["課程與教學現場", "把抽象的程式概念拆成可操作的練習，依學生程度調整 APCS、Python 與網頁課程節奏。", ["設計循序練習與專題任務，協助學生建立可遷移的解題能力。", "帶領學生理解演算法、資料結構與基礎 AI 概念。", "將教學回饋整理成更穩定的課堂流程與範例素材。"]],
+        ["資料分析課程支援", "協助學生把資料前處理、模型訓練與結果解讀串成完整分析流程。", ["支援 Python、資料探勘與大數據分析課程作業。", "協助整理題目規格、評分標準與常見錯誤。", "以回饋方式幫助學生修正資料處理與程式邏輯。"]],
+        ["AI 工作坊設計", "將資料科學與機器學習概念轉成高中生能立即操作的實作活動。", ["規劃互動式 Python 實作，降低第一次接觸 AI 的門檻。", "用資料集與模型結果引導學生理解資料探勘流程。", "把課程拆成概念、實作、討論與成果整理四段。"]],
+        ["影像辨識與產品整合", "協助把醫療影像辨識模型與既有平台流程整合，讓模型輸出能接到使用情境。", ["參與傷口影像資料整理與辨識模型開發。", "協助 Insight 平台功能與 LINE Bot 流程串接。", "關注模型結果如何被實際工作流程理解與使用。"]],
+        ["軟體文件自動化", "參與 Java method 分析與 SPEC 文件生成流程，協助團隊降低文件整理成本。", ["分析既有程式碼結構，整理 method 與規格文件之間的對應。", "協助建立自動轉換邏輯，讓文件產出更一致。", "熟悉企業開發流程中的規格、維護與溝通需求。"]]
+      ],
       projects: [
         ["甲狀腺超音波結節偵測、分割與分類研究", "YOLOv11 / ResNet50 / Flask GUI / Medical Imaging"],
         ["SnapDiet 飲控小幫手", "Nutrition assistant / Image-based meal logging / Zeabur"],
         ["OpenPediCare", "Django / AI summary / Parent portal / PDF output"],
         ["OrangeAppleAssistant", "Python desktop app / AI writing assistant / Teaching workflow"],
-        ["話中有畫 Talk2Draw", "Django / Web Speech API / Search / Slides / Ollama"],
+        ["話中有畫", "Django / Web Speech API / Search / Slides / Ollama"],
         ["LightRAG Harry Potter / Local AI Teaching Assistant", "Graph retrieval / Local LLM / LlamaIndex / Open WebUI"]
       ],
+      thesisButton: "論文全文",
       projectDetails: [
         ["README 摘要", "碩士論文主題聚焦於甲狀腺超音波影像中的結節偵測、分割與良惡性分類。系統將三個模型模組串成可展示的臨床輔助流程。", ["使用 YOLOv11 進行結節位置偵測。", "以 ResNet50 / timm 對 ROI 進行良惡性二分類。", "整合 Flask GUI，讓研究成果可被視覺化展示。"]],
         ["README 摘要", "SnapDiet 是飲食控制工具，目標是讓使用者透過照片與聊天互動快速記錄餐點，掌握熱量、營養素與當日累計。", ["以餐點照片降低飲食紀錄門檻。", "提供熱量、蛋白質、脂肪、碳水與每日累計資訊。", "已部署公開站點，可直接對外展示產品體驗。"]],
@@ -80,10 +122,22 @@
       ],
       writingIntro: ["Medium / HackMD", "長篇技術文章、研究筆記、教學 memo 集中到獨立文章庫，首頁只保留最新與精選內容。"],
       writingLinks: ["查看更多", "完整文章庫"],
-      certs: [
-        ["證照 / 檢定", ["TOEIC 745", "電腦軟體應用乙級 / 丙級", "網頁設計丙級", "會計事務人工記帳丙級", "大數據分析：商業策略課程"]],
-        ["競賽亮點", ["資訊管理學系專題競賽初賽第一名", "資料庫班級競賽第一名", "人工智慧與大數據創意競賽佳作", "金匠獎程式設計個人賽 / 團體賽決賽", "2023 數據驅動創新應用大賽入圍複賽"]]
-      ]
+      certificates: [
+        ["TOEIC 745", "英文能力檢定"],
+        ["畢業專題競賽", "第一名"],
+        ["系統分析與設計", "第三名"],
+        ["系統分析與設計", "卓越班級獎"],
+        ["金匠獎", "個人賽入圍決賽"],
+        ["金匠獎", "團體賽入圍決賽"],
+        ["ChatGPT 系統開發黑客松", "系統開發參與證明"],
+        ["ChatBot 黑客松", "完賽證明"],
+        ["AI 與大數據創意競賽", "佳作"],
+        ["數據驅動創新應用大賽", "工作坊證明"],
+        ["資料庫競賽", "第一名"],
+        ["Excel Power Tools", "資料分析課程證書"],
+        ["系學績優獎", "第二名"]
+      ],
+      footerLabels: ["聯絡方式", "社群連結", "代表專案", "目前主軸"]
     }
   };
 
@@ -94,7 +148,7 @@
       skip: "Skip to main content",
       back: "Back to resume",
       allArticles: "All Articles",
-      articleIntro: "Medium tutorials and HackMD notes for technical builds, ZeroJudge APCS practice, and LeetCode algorithm review.",
+      articleIntro: "Medium tutorials and HackMD notes for technical builds, ZeroJudge APCS practice, LeetCode algorithm review, and information sharing.",
       visible: "Visible",
       platforms: "Platforms",
       categories: "Categories",
@@ -105,7 +159,9 @@
       search: "Search articles",
       featured: "FEATURED",
       library: "LIBRARY",
-      filters: ["All", "Medium", "HackMD", "Tech", "ZeroJudge", "LeetCode"],
+      filters: ["All", "Medium", "HackMD", "Tech", "ZeroJudge", "LeetCode", "Info Sharing"],
+      pagerPrev: "Previous",
+      pagerNext: "Next",
       toggle: "中文"
     },
     zh: {
@@ -114,7 +170,7 @@
       skip: "跳到主要內容",
       back: "回履歷首頁",
       allArticles: "所有文章",
-      articleIntro: "整理 Medium 技術教學與 HackMD 筆記，包含技術實作、ZeroJudge APCS 與 LeetCode 演算法整理。",
+      articleIntro: "整理 Medium 技術教學與 HackMD 筆記，包含技術實作、ZeroJudge APCS、LeetCode 演算法與資訊分享文章。",
       visible: "顯示文章",
       platforms: "平台",
       categories: "分類",
@@ -125,7 +181,9 @@
       search: "搜尋文章",
       featured: "精選文章",
       library: "文章庫",
-      filters: ["全部", "Medium", "HackMD", "技術實作", "ZeroJudge", "LeetCode"],
+      filters: ["全部", "Medium", "HackMD", "技術實作", "ZeroJudge", "LeetCode", "資訊分享"],
+      pagerPrev: "上一頁",
+      pagerNext: "下一頁",
       toggle: "EN"
     }
   };
@@ -161,6 +219,11 @@
     setText("#logo .title", copy.title);
     setHtml("#logo .tagline", copy.tagline);
     setHtml("#profile .lead", copy.profile);
+    setText("#education .section-title span", copy.sectionTitles.education);
+    setText("#experience .section-title span", copy.sectionTitles.experience);
+    setText("#projects .section-title span", copy.sectionTitles.projects);
+    setText("#writing .section-title span", copy.sectionTitles.writing);
+    setText("#certifications .section-title span", copy.sectionTitles.certificates);
 
     setList(".metric-note", copy.metricNotes, (node, value) => {
       node.textContent = value;
@@ -175,13 +238,28 @@
 
     setList("#experience .timeline-card", copy.experience, (card, value) => {
       card.querySelector("h3").textContent = value[0];
-      card.querySelector("p").textContent = value[1];
+      card.querySelector("summary > p").textContent = value[1];
+    });
+
+    setList("#experience .timeline-card", copy.experienceDetails, (card, value) => {
+      const detail = card.querySelector(".experience-detail");
+      if (!detail) {
+        return;
+      }
+
+      detail.querySelector("h4").textContent = value[0];
+      detail.querySelector("p").textContent = value[1];
+      detail.querySelectorAll("li").forEach((item, index) => {
+        item.textContent = value[2][index] || "";
+      });
     });
 
     setList("#projects .project-tile", copy.projects, (card, value) => {
       card.querySelector("h3").textContent = value[0];
       card.querySelector("summary p").textContent = value[1];
     });
+
+    setText("[data-thesis-button]", copy.thesisButton);
 
     setList("#projects .project-tile", copy.projectDetails, (card, value) => {
       const readme = card.querySelector(".project-readme");
@@ -201,19 +279,24 @@
     setText(".writing-home .split-section-head .glass-link", copy.writingLinks[0]);
     setText(".writing-home .primary-link", copy.writingLinks[1]);
 
-    setList("#certifications .info-card", copy.certs, (card, value) => {
-      card.querySelector("h3").textContent = value[0];
-      card.querySelectorAll("li").forEach((item, index) => {
-        item.textContent = value[1][index] || "";
-      });
+    setList("#certifications .certificate-card", copy.certificates, (card, value) => {
+      card.dataset.certificateTitle = value[0];
+      card.querySelector("strong").textContent = value[0];
+      card.querySelector("span:last-child").textContent = value[1];
+    });
+
+    document.querySelectorAll(".footer-shell h4").forEach((heading, index) => {
+      if (copy.footerLabels[index]) {
+        heading.textContent = copy.footerLabels[index];
+      }
     });
   };
 
   const applyPage = (lang) => {
     const copy = page[lang];
     const navLabels = lang === "zh"
-      ? ["簡介", "學歷", "經歷", "專案", "文章", "證照", "聯絡"]
-      : ["PROFILE", "EDUCATION", "EXPERIENCE", "PROJECTS", "WRITING", "CERTIFICATIONS", "CONTACT"];
+      ? ["簡介", "學歷", "經歷", "專案", "文章", "獎狀證書", "聯絡"]
+      : ["PROFILE", "EDUCATION", "EXPERIENCE", "PROJECTS", "WRITING", "CERTIFICATES", "CONTACT"];
 
     document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
     setText(".nav-home span", lang === "zh" ? "首頁" : "Home");
@@ -255,6 +338,13 @@
       if (copy.filters[index]) {
         button.textContent = copy.filters[index];
       }
+    });
+
+    document.querySelectorAll("[data-page-prev] span").forEach((node) => {
+      node.textContent = copy.pagerPrev;
+    });
+    document.querySelectorAll("[data-page-next] span").forEach((node) => {
+      node.textContent = copy.pagerNext;
     });
 
     document.querySelectorAll("[data-lang-toggle]").forEach((button) => {

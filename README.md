@@ -4,12 +4,12 @@
 
 ## 如何更新文章
 
-文章資料集中在 `assets/js/writing.js` 的 `articles` 陣列。之後新增 Medium 或 HackMD 文章時，只要新增一個物件，不需要改首頁或文章頁 HTML。
+文章資料集中在 `assets/js/writing.js`。之後新增 Medium 或 HackMD 文章時，不需要改首頁或文章頁卡片 HTML。
 
 ```js
 // assets/js/writing.js
-// 新增文章時複製這段，放到 articles 陣列中。
-// categoryKey 目前可用：tech、zerojudge、leetcode。
+// Medium / 技術實作文章：新增完整物件，放到 articles 陣列開頭。
+// categoryKey 目前可用：tech、zerojudge、leetcode、info。
 // featured: true 代表會出現在首頁文章區塊；不想放首頁就省略或設成 false。
 {
   platform: "HackMD",
@@ -25,6 +25,24 @@
 }
 ```
 
+ZeroJudge 與 LeetCode 題解已改成清單式維護，新增時只要補 slug：
+
+```js
+const zeroJudgeNotes = [
+  "apcs_d406",
+  "apcs_a290"
+];
+
+const leetCodeNotes = [
+  "leetcode_001",
+  "leetcode_041"
+];
+```
+
+資訊分享文章可以用完整物件新增，或參考目前的 `NoteForIM` 物件使用 `categoryKey: "info"`。
+
+如果你更新了很多文章，但瀏覽器還顯示舊資料，可以把 `index.html` 和 `writing.html` 底部的 `assets/js/writing.js?v=...` 版本號換成新的字串，強制瀏覽器重新載入文章資料。
+
 如果未來新增新的分類，例如 `research`，需要同步改兩個地方：
 
 ```html
@@ -34,8 +52,8 @@
 
 ```js
 // assets/js/site-language.js：新增對應的中英文 filter 顯示文字
-filters: ["All", "Medium", "HackMD", "Tech", "ZeroJudge", "LeetCode", "Research"]
-filters: ["全部", "Medium", "HackMD", "技術實作", "ZeroJudge", "LeetCode", "研究筆記"]
+filters: ["All", "Medium", "HackMD", "Tech", "ZeroJudge", "LeetCode", "Info Sharing", "Research"]
+filters: ["全部", "Medium", "HackMD", "技術實作", "ZeroJudge", "LeetCode", "資訊分享", "研究筆記"]
 ```
 
 ## 如何更新履歷 PDF
@@ -52,14 +70,32 @@ filters: ["全部", "Medium", "HackMD", "技術實作", "ZeroJudge", "LeetCode",
 
 如果只是更新內容，直接用新 PDF 覆蓋 `resume/mycv_eng.pdf` 或 `resume/mycv_chi.pdf` 即可。如果改檔名，就要同步更新兩個 HTML 裡的 `href`。
 
-## 如何更新 Banner 背景照片
+## 如何更新 Banner 背景輪播照片
 
-首頁與文章頁 banner 背景由 `assets/css/resume.css` 的 CSS 變數控制：
+首頁背景輪播照片放在 `assets/images/hero-carousel/`。目前有五張圖：
 
-```css
-/* 換背景照片時，把圖片放到 assets/images/，再改這一行 */
---hero-photo: url("../images/mac.jpg");
+```text
+assets/images/hero-carousel/slide-1.jpg
+assets/images/hero-carousel/slide-2.jpg
+assets/images/hero-carousel/slide-3.jpg
+assets/images/hero-carousel/slide-4.jpg
+assets/images/hero-carousel/slide-5.jpg
 ```
+
+新增輪播照片時，先把圖片放進資料夾，再到 `assets/js/site-interactions.js` 更新 `heroSlides`：
+
+```js
+const heroSlides = [
+  "assets/images/hero-carousel/slide-1.jpg",
+  "assets/images/hero-carousel/slide-2.jpg",
+  "assets/images/hero-carousel/slide-3.jpg",
+  "assets/images/hero-carousel/slide-4.jpg",
+  "assets/images/hero-carousel/slide-5.jpg",
+  "assets/images/hero-carousel/your-new-photo.jpg"
+];
+```
+
+文章頁 hero 仍使用 `assets/css/resume.css` 的 `--hero-photo` 當背景；如果也想換文章頁背景，改那個 CSS 變數即可。
 
 ## 如何更新中英文文字
 
@@ -80,6 +116,49 @@ filters: ["全部", "Medium", "HackMD", "技術實作", "ZeroJudge", "LeetCode",
 // home.en.projects / home.zh.projects：專案卡片未展開的標題與副標
 // home.en.projectDetails / home.zh.projectDetails：展開後 README Summary 內容
 ```
+
+PROJECTS 目前一頁最多 6 個，分頁由 `assets/js/site-interactions.js` 控制：
+
+```js
+const pageSize = 6;
+```
+
+要新增專案時，直接在 `#projects .project-grid` 裡新增一個 `<details class="project-tile">`；如果超過 6 個，上一頁 / 下一頁會自動出現可用狀態。
+
+## 如何更新獎狀 / 證書
+
+獎狀圖片放在 `assets/images/certificates/`。目前頁面會依照 `index.html` 的卡片順序顯示，第一張固定是 TOEIC，第二張是畢業專題；其他相同類型的獎狀盡量放在相鄰位置，例如系統分析放一起、金匠獎放一起、黑客松放一起、資料 / AI 類放一起。
+
+每張卡片在 `index.html` 的 `#certifications` 區塊：
+
+```html
+<button
+  type="button"
+  class="certificate-card"
+  data-certificate-image="assets/images/certificates/your-certificate.jpg"
+  data-certificate-title="證書標題"
+>
+```
+
+`data-certificate-image` 補上圖片路徑後，卡片預覽和點開放大都會自動使用那張圖片。預覽縮圖使用 `object-fit: contain`，所以不管直式或橫式證照都會完整放進同樣大小的外框內。獎狀 / 證書同樣一頁最多 6 個，超過 6 個會自動分頁。
+
+如果改卡片文字，也要同步 `assets/js/site-language.js` 的：
+
+```js
+// home.en.certificates / home.zh.certificates
+```
+
+## 如何更新 Follow Me 連結
+
+footer 的 Gmail、Instagram、Facebook、LinkedIn、GitHub icon 都在 `index.html` 的 `.social-links`。目前除了 GitHub 外都先用 `href="#"` 預留：
+
+```html
+<a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+  <i class="fab fa-instagram"></i>
+</a>
+```
+
+之後把 `href="#"` 換成你的連結即可，`target="_blank"` 已經都設定好了。
 
 ## 導覽邏輯
 
