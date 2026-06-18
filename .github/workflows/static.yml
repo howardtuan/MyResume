@@ -41,9 +41,16 @@ jobs:
           node-version: 20
       - name: Update LeetCode data
         run: node scripts/fetch-leetcode.js
+      - name: Update GitHub data
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/fetch-github.js
       - name: Require fresh LeetCode data on scheduled refreshes
         if: github.event_name == 'schedule'
         run: node -e "const data = require('./assets/data/leetcode.json'); if (data.status !== 'fresh') throw new Error(data.error || 'LeetCode data is stale');"
+      - name: Require fresh GitHub data on scheduled refreshes
+        if: github.event_name == 'schedule'
+        run: node -e "const data = require('./assets/data/github.json'); if (data.status !== 'fresh') throw new Error(data.error || 'GitHub data is stale');"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

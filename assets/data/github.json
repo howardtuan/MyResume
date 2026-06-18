@@ -1,0 +1,109 @@
+{
+  "username": "howardtuan",
+  "profileUrl": "https://github.com/howardtuan",
+  "generatedAt": "2026-06-18T08:37:22.350Z",
+  "source": "github-rest",
+  "status": "fresh",
+  "profile": {
+    "name": "段浩恩 Howard Tuan",
+    "bio": "NCHU MIS",
+    "avatar": "https://avatars.githubusercontent.com/u/74853361?v=4",
+    "publicRepos": 53,
+    "followers": 10,
+    "following": 12
+  },
+  "stats": {
+    "totalStars": 29,
+    "totalForks": 3,
+    "ownerRepos": 43,
+    "forkedRepos": 10
+  },
+  "topLanguages": [
+    {
+      "language": "Python",
+      "count": 18
+    },
+    {
+      "language": "HTML",
+      "count": 12
+    },
+    {
+      "language": "Jupyter Notebook",
+      "count": 5
+    },
+    {
+      "language": "Java",
+      "count": 2
+    },
+    {
+      "language": "JavaScript",
+      "count": 2
+    },
+    {
+      "language": "CSS",
+      "count": 1
+    }
+  ],
+  "recentRepos": [
+    {
+      "name": "MyResume",
+      "description": "",
+      "url": "https://github.com/howardtuan/MyResume",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-18T08:07:50Z",
+      "isFork": false
+    },
+    {
+      "name": "neetcode-submissions",
+      "description": "My NeetCode.io problem submissions",
+      "url": "https://github.com/howardtuan/neetcode-submissions",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-16T13:45:44Z",
+      "isFork": false
+    },
+    {
+      "name": "OrangeAppleAssistant",
+      "description": "",
+      "url": "https://github.com/howardtuan/OrangeAppleAssistant",
+      "language": "Python",
+      "stars": 1,
+      "forks": 0,
+      "updatedAt": "2026-06-13T11:40:16Z",
+      "isFork": false
+    },
+    {
+      "name": "OpenPediCare",
+      "description": "",
+      "url": "https://github.com/howardtuan/OpenPediCare",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-06T14:59:18Z",
+      "isFork": false
+    },
+    {
+      "name": "GraduationProject",
+      "description": "",
+      "url": "https://github.com/howardtuan/GraduationProject",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-03T06:49:04Z",
+      "isFork": false
+    },
+    {
+      "name": "namecard-linebot",
+      "description": "namecard-linebot",
+      "url": "https://github.com/howardtuan/namecard-linebot",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-02T10:46:17Z",
+      "isFork": false
+    }
+  ]
+}

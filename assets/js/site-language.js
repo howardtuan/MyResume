@@ -15,6 +15,7 @@
         experience: "WORK EXPERIENCE",
         projects: "PROJECTS",
         leetcode: "LEETCODE",
+        github: "GITHUB",
         writing: "WRITING",
         certificates: "AWARDS & CERTIFICATES"
       },
@@ -94,6 +95,7 @@
         experience: "工作經驗",
         projects: "專案",
         leetcode: "LEETCODE",
+        github: "GITHUB",
         writing: "文章",
         certificates: "獎狀 / 證書"
       },
@@ -247,6 +249,7 @@
     setText("#experience .section-title span", copy.sectionTitles.experience);
     setText("#projects .section-title span", copy.sectionTitles.projects);
     setText("#leetcode .section-title span", copy.sectionTitles.leetcode);
+    setText("#github .section-title span", copy.sectionTitles.github);
     setText("#writing .section-title span", copy.sectionTitles.writing);
     setText("#certifications .section-title span", copy.sectionTitles.certificates);
 
@@ -340,8 +343,8 @@
   const applyPage = (lang) => {
     const copy = page[lang];
     const navLabels = lang === "zh"
-      ? ["簡介", "學歷", "經歷", "專案", "LEETCODE", "文章", "獎狀證書", "聯絡"]
-      : ["PROFILE", "EDUCATION", "EXPERIENCE", "PROJECTS", "LEETCODE", "WRITING", "CERTIFICATES", "CONTACT"];
+      ? ["簡介", "學歷", "經歷", "專案", "GITHUB", "LEETCODE", "文章", "獎狀證書", "聯絡"]
+      : ["PROFILE", "EDUCATION", "EXPERIENCE", "PROJECTS", "GITHUB", "LEETCODE", "WRITING", "CERTS", "CONTACT"];
 
     document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
     setText(".nav-home span", lang === "zh" ? "首頁" : "Home");
