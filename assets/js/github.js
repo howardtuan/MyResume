@@ -30,7 +30,6 @@
       languages: "Top Languages",
       activity: ["Contribution Activity", "Public GitHub contributions"],
       streak: ["Contribution Streak", "Current streak, longest streak, and total contributions"],
-      stats: ["Overall Stats", "Stars, commits, PRs, issues, and contribution rank"],
       recent: ["Recently Updated", "Public repositories sorted by latest activity"],
       noRepos: "No public repositories available.",
       statusAccepted: "Updated",
@@ -158,12 +157,8 @@
   };
 
   const imageUrl = (type, lang) => {
-    const locale = lang === "zh" ? "zh-tw" : "en";
     if (type === "streak") {
       return `https://streak-stats.demolab.com?user=${USERNAME}&theme=default&hide_border=true&date_format=Y-m-d&locale=${lang === "zh" ? "zh_Hant" : "en"}`;
-    }
-    if (type === "stats") {
-      return `https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&hide_border=true&title_color=172235&icon_color=2478ff&text_color=52647a&bg_color=ffffff00&include_all_commits=true&count_private=false&locale=${locale}`;
     }
     return `https://ghchart.rshah.org/49c69d/${USERNAME}`;
   };
@@ -238,8 +233,6 @@
     setText(root, "[data-github-activity-copy]", text.activity[1]);
     setText(root, "[data-github-streak-title]", text.streak[0]);
     setText(root, "[data-github-streak-copy]", text.streak[1]);
-    setText(root, "[data-github-stats-title]", text.stats[0]);
-    setText(root, "[data-github-stats-copy]", text.stats[1]);
     setText(root, "[data-github-recent-title]", text.recent[0]);
     setText(root, "[data-github-recent-copy]", text.recent[1]);
   };

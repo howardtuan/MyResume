@@ -1177,9 +1177,9 @@ img {
 
 .github-shell {
   display: grid;
-  grid-template-columns: minmax(280px, 0.36fr) minmax(0, 0.64fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .github-summary,
@@ -1197,6 +1197,14 @@ img {
 .github-visuals-card,
 .github-repos-card {
   padding: 22px;
+}
+
+@media (min-width: 821px) {
+  .github-summary,
+  .github-visuals-card {
+    min-height: 668px;
+    height: 100%;
+  }
 }
 
 .github-person {
@@ -1319,6 +1327,7 @@ img {
 .github-visuals-card {
   display: grid;
   gap: 20px;
+  align-content: start;
 }
 
 .github-card-head p {
