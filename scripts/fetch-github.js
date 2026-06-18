@@ -2,7 +2,8 @@ const fs = require("node:fs/promises");
 const path = require("node:path");
 
 const USERNAME = process.env.GITHUB_USERNAME || "howardtuan";
-const OUTPUT_PATH = process.env.GITHUB_OUTPUT || path.join("assets", "data", "github.json");
+// GITHUB_OUTPUT is reserved by GitHub Actions for step outputs.
+const OUTPUT_PATH = process.env.GITHUB_DATA_OUTPUT || path.join("assets", "data", "github.json");
 const PROFILE_URL = `https://github.com/${USERNAME}`;
 const API_BASE = "https://api.github.com";
 
