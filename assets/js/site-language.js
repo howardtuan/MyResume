@@ -14,6 +14,7 @@
         education: "EDUCATION",
         experience: "WORK EXPERIENCE",
         projects: "PROJECTS",
+        leetcode: "LEETCODE",
         writing: "WRITING",
         certificates: "AWARDS & CERTIFICATES"
       },
@@ -55,6 +56,17 @@
       ],
       writingIntro: ["Medium / HackMD", "Long-form technical essays, research notes, and teaching memos now live in a dedicated article library so the resume page stays focused."],
       writingLinks: ["View More", "Open Full Library"],
+      leetcode: {
+        profileLink: "Open Profile",
+        metrics: [
+          ["Global Ranking", "Public profile rank"],
+          ["Solved Problems", "accepted submissions"],
+          ["Contest Rating", "Top"]
+        ],
+        difficulties: ["Easy", "Medium", "Hard"],
+        calendar: ["Submission Activity", "submissions across", "active days"],
+        submissions: ["Recent Submissions", "Latest public attempts from LeetCode"]
+      },
       certificates: [
         ["TOEIC 745", "English proficiency certificate"],
         ["Graduation Project Competition", "First place"],
@@ -81,6 +93,7 @@
         education: "學歷",
         experience: "工作經驗",
         projects: "專案",
+        leetcode: "LEETCODE",
         writing: "文章",
         certificates: "獎狀 / 證書"
       },
@@ -122,6 +135,17 @@
       ],
       writingIntro: ["Medium / HackMD", "長篇技術文章、研究筆記、教學 memo 集中到獨立文章庫，首頁只保留最新與精選內容。"],
       writingLinks: ["查看更多", "完整文章庫"],
+      leetcode: {
+        profileLink: "開啟 LeetCode",
+        metrics: [
+          ["全球排名", "公開個人頁排名"],
+          ["已解題目", "次通過提交"],
+          ["競賽分數", "前"]
+        ],
+        difficulties: ["簡單", "中等", "困難"],
+        calendar: ["提交活躍紀錄", "次提交，分布於", "個活躍日"],
+        submissions: ["最近提交", "LeetCode 上最新的公開提交紀錄"]
+      },
       certificates: [
         ["TOEIC 745", "英文能力檢定"],
         ["畢業專題競賽", "第一名"],
@@ -222,6 +246,7 @@
     setText("#education .section-title span", copy.sectionTitles.education);
     setText("#experience .section-title span", copy.sectionTitles.experience);
     setText("#projects .section-title span", copy.sectionTitles.projects);
+    setText("#leetcode .section-title span", copy.sectionTitles.leetcode);
     setText("#writing .section-title span", copy.sectionTitles.writing);
     setText("#certifications .section-title span", copy.sectionTitles.certificates);
 
@@ -279,6 +304,26 @@
     setText(".writing-home .split-section-head .glass-link", copy.writingLinks[0]);
     setText(".writing-home .primary-link", copy.writingLinks[1]);
 
+    setText("#leetcode .split-section-head .glass-link", copy.leetcode.profileLink);
+    setList("#leetcode .leetcode-metric", copy.leetcode.metrics, (card, value, index) => {
+      card.querySelector(".metric-label").textContent = value[0];
+      if (index === 1) {
+        card.querySelector("[data-leetcode-accepted-label]").textContent = value[1];
+      } else if (index === 2) {
+        card.querySelector("[data-leetcode-top-label]").textContent = value[1];
+      } else {
+        card.querySelector(".metric-note").textContent = value[1];
+      }
+    });
+    setList("#leetcode .difficulty-row", copy.leetcode.difficulties, (row, value) => {
+      row.querySelector(".difficulty-name").textContent = value;
+    });
+    setText("#leetcode .leetcode-calendar-card h3", copy.leetcode.calendar[0]);
+    setText("[data-leetcode-calendar-total-label]", copy.leetcode.calendar[1]);
+    setText("[data-leetcode-calendar-days-label]", copy.leetcode.calendar[2]);
+    setText("#leetcode .leetcode-submissions-card h3", copy.leetcode.submissions[0]);
+    setText("#leetcode .leetcode-submissions-card .leetcode-card-head p", copy.leetcode.submissions[1]);
+
     setList("#certifications .certificate-card", copy.certificates, (card, value) => {
       card.dataset.certificateTitle = value[0];
       card.querySelector("strong").textContent = value[0];
@@ -295,8 +340,8 @@
   const applyPage = (lang) => {
     const copy = page[lang];
     const navLabels = lang === "zh"
-      ? ["簡介", "學歷", "經歷", "專案", "文章", "獎狀證書", "聯絡"]
-      : ["PROFILE", "EDUCATION", "EXPERIENCE", "PROJECTS", "WRITING", "CERTIFICATES", "CONTACT"];
+      ? ["簡介", "學歷", "經歷", "專案", "LEETCODE", "文章", "獎狀證書", "聯絡"]
+      : ["PROFILE", "EDUCATION", "EXPERIENCE", "PROJECTS", "LEETCODE", "WRITING", "CERTIFICATES", "CONTACT"];
 
     document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
     setText(".nav-home span", lang === "zh" ? "首頁" : "Home");
@@ -357,6 +402,7 @@
     const normalized = lang === "zh" ? "zh" : "en";
     applyPage(normalized);
     applyHome(normalized);
+    window.dispatchEvent(new CustomEvent("site-language-change", { detail: { lang: normalized } }));
     if (persist) {
       localStorage.setItem("site-language", normalized);
     }

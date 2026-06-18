@@ -1,0 +1,148 @@
+{
+  "username": "howardtuan",
+  "profileUrl": "https://leetcode.com/u/howardtuan/",
+  "generatedAt": "2026-06-18T06:48:03.212Z",
+  "source": "leetcode-graphql",
+  "status": "fresh",
+  "profile": {
+    "realName": "段浩恩 Howard Tuan",
+    "ranking": 1179824,
+    "avatar": "https://assets.leetcode.com/users/avatars/avatar_1664894881.png"
+  },
+  "solved": {
+    "total": 136,
+    "easy": 78,
+    "medium": 54,
+    "hard": 4,
+    "acceptedSubmissions": 254
+  },
+  "contest": {
+    "attendedContests": 2,
+    "rating": 1518.777,
+    "globalRanking": 338594,
+    "totalParticipants": 874367,
+    "topPercentage": 39.16
+  },
+  "calendar": {
+    "2025-09-09": 1,
+    "2026-02-07": 1,
+    "2026-02-23": 1,
+    "2026-03-08": 1,
+    "2026-04-04": 2,
+    "2026-04-05": 1,
+    "2026-04-28": 1,
+    "2026-05-01": 1,
+    "2026-05-07": 1,
+    "2026-05-08": 2
+  },
+  "recentSubmissions": [
+    {
+      "title": "Minimum Window Substring",
+      "titleSlug": "minimum-window-substring",
+      "url": "https://leetcode.com/problems/minimum-window-substring/",
+      "timestamp": 1778253607,
+      "submittedAt": "2026-05-08T15:20:07.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Permutation in String",
+      "titleSlug": "permutation-in-string",
+      "url": "https://leetcode.com/problems/permutation-in-string/",
+      "timestamp": 1778245621,
+      "submittedAt": "2026-05-08T13:07:01.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Longest Repeating Character Replacement",
+      "titleSlug": "longest-repeating-character-replacement",
+      "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+      "timestamp": 1778146098,
+      "submittedAt": "2026-05-07T09:28:18.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Trapping Rain Water",
+      "titleSlug": "trapping-rain-water",
+      "url": "https://leetcode.com/problems/trapping-rain-water/",
+      "timestamp": 1777628911,
+      "submittedAt": "2026-05-01T09:48:31.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "3Sum",
+      "titleSlug": "3sum",
+      "url": "https://leetcode.com/problems/3sum/",
+      "timestamp": 1777396338,
+      "submittedAt": "2026-04-28T17:12:18.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Valid Palindrome",
+      "titleSlug": "valid-palindrome",
+      "url": "https://leetcode.com/problems/valid-palindrome/",
+      "timestamp": 1775379945,
+      "submittedAt": "2026-04-05T09:05:45.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Longest Consecutive Sequence",
+      "titleSlug": "longest-consecutive-sequence",
+      "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+      "timestamp": 1775326962,
+      "submittedAt": "2026-04-04T18:22:42.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Valid Sudoku",
+      "titleSlug": "valid-sudoku",
+      "url": "https://leetcode.com/problems/valid-sudoku/",
+      "timestamp": 1775315471,
+      "submittedAt": "2026-04-04T15:11:11.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Top K Frequent Elements",
+      "titleSlug": "top-k-frequent-elements",
+      "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+      "timestamp": 1772997125,
+      "submittedAt": "2026-03-08T19:12:05.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Group Anagrams",
+      "titleSlug": "group-anagrams",
+      "url": "https://leetcode.com/problems/group-anagrams/",
+      "timestamp": 1771873177,
+      "submittedAt": "2026-02-23T18:59:37.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Valid Anagram",
+      "titleSlug": "valid-anagram",
+      "url": "https://leetcode.com/problems/valid-anagram/",
+      "timestamp": 1770489936,
+      "submittedAt": "2026-02-07T18:45:36.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    },
+    {
+      "title": "Decode String",
+      "titleSlug": "decode-string",
+      "url": "https://leetcode.com/problems/decode-string/",
+      "timestamp": 1757383040,
+      "submittedAt": "2025-09-09T01:57:20.000Z",
+      "status": "Accepted",
+      "language": "python3"
+    }
+  ]
+}

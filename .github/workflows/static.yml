@@ -6,6 +6,10 @@ on:
   push:
     branches: ["main"]
 
+  # Refreshes LeetCode data in the deployed static artifact
+  schedule:
+    - cron: "23 */6 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -31,6 +35,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Update LeetCode data
+        run: node scripts/fetch-leetcode.js
+      - name: Require fresh LeetCode data on scheduled refreshes
+        if: github.event_name == 'schedule'
+        run: node -e "const data = require('./assets/data/leetcode.json'); if (data.status !== 'fresh') throw new Error(data.error || 'LeetCode data is stale');"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
