@@ -291,11 +291,11 @@ img {
 
 .nav-center a {
   flex: 0 0 auto;
-  min-height: 36px;
-  padding: 10px 9px;
+  min-height: 38px;
+  padding: 10px 10px;
   border-radius: 999px;
   color: #516177;
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 0;
   line-height: 1;
@@ -2021,7 +2021,7 @@ img {
     flex: 0 0 auto;
     min-height: 34px;
     padding: 9px 8px;
-    font-size: 0.68rem;
+    font-size: 0.78rem;
   }
 
   .nav-actions {
