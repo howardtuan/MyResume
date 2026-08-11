@@ -417,9 +417,10 @@ img {
 .metric-number {
   color: #182235;
   font-family: "Noto Serif TC", serif;
-  font-size: 2rem;
+  font-size: clamp(1.55rem, 2.3vw, 2rem);
   font-weight: 700;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .metric-label {
@@ -521,6 +522,7 @@ img {
   font-family: "Noto Serif TC", serif;
   font-size: 1.55rem;
   line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .info-card p,
@@ -675,6 +677,23 @@ img {
   background:
     linear-gradient(145deg, rgba(173, 125, 40, 0.72), rgba(36, 120, 255, 0.42)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0));
+}
+
+.experience-visual[data-visual="leadership"] {
+  background:
+    linear-gradient(145deg, rgba(142, 91, 198, 0.76), rgba(36, 120, 255, 0.46)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0));
+}
+
+.experience-icon {
+  cursor: default;
+  font-size: 3.25rem;
+}
+
+.experience-icon:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--glass-inset), 0 18px 36px rgba(36, 120, 255, 0.16);
+  transform: none;
 }
 
 .experience-detail h4 {

@@ -3,12 +3,14 @@
     en: {
       title: "Howard Tuan",
       tagline: "National Chung Hsing University, Graduate Institute of MIS<br>Medical Imaging AI | RAG Systems | Product-minded Builder",
-      profile: "I am currently studying at the Graduate Institute of Management Information Systems at National Chung Hsing University. My work focuses on <strong>medical imaging AI, RAG question-answering systems, teaching tools, and deployable product development</strong>, with an emphasis on turning technical ideas into workflows people can understand and use.",
-      metricNotes: [
-        "NCHU MIS Master's Program",
-        "Average score 92.4",
-        "Programming education and class mentoring",
-        "Detection / Segmentation / Classification"
+      pageTitle: "Howard Tuan | AI & Software Engineer",
+      pageDescription: "Howard Tuan's portfolio and resume, featuring medical imaging AI, LLM/RAG, backend systems, and deployable AI products.",
+      profile: "I am an M.S. candidate in Management Information Systems at National Chung Hsing University, graduating in August 2026. I focus on <strong>medical imaging AI, LLM/RAG, backend systems, and cloud deployment</strong>, with end-to-end experience spanning model development, API engineering, and production launches.",
+      metrics: [
+        ["4 / 45", "Program Ranking", "NCHU MIS | GPA 4.21 / 4.3"],
+        ["0.84 / ≈0.90", "Thesis mAP / Dice", "Thyroid ultrasound detection and segmentation"],
+        ["3 weeks / 5 models", "Production Launch", "Medical AI × LINE Bot"],
+        ["Nearly 500", "Product Adoption", "SnapDiet LINE friends in its first month"]
       ],
       sectionTitles: {
         education: "EDUCATION",
@@ -20,40 +22,47 @@
         certificates: "AWARDS & CERTIFICATES"
       },
       education: [
-        ["National Chung Hsing University, M.S. in MIS", "Graduate ranking 4/45, average score 92.4, GPA 4.21/4.3.", "Thesis: Deep learning models for thyroid ultrasound nodule detection, segmentation, and benign-malignant classification."],
+        ["National Chung Hsing University, M.S. in MIS", "Program ranking 4/45, average score 92.4, GPA 4.21/4.3.", "Thesis: Deep learning models for thyroid ultrasound nodule detection, segmentation, and benign-malignant classification."],
         ["Chung Yuan Christian University, B.B.A. in MIS", "Graduate ranking 12/113, average score 88.31, GPA 3.92/4.", "Graduation project: Talk2Draw."],
         ["New Taipei Industrial Vocational High School, Data Processing", "Top 6% in class, with foundations in business, accounting, data processing, and web design."]
       ],
+      educationDates: ["2024 - 2026 (Expected Aug 2026)", "2020 - 2024", "2017 - 2020"],
       experience: [
-        ["Programming Instructor / Orange Apple Programming School", "Teaching APCS, Scratch, Python, JavaScript, HTML, Database, Algorithm, and AI while helping students build programming fundamentals and problem-solving confidence."],
-        ["Teaching Assistant / NCHU MIS", "Assisting graduate and undergraduate courses, supporting Python instruction, assignments, and in-class technical guidance."],
-        ["AI Workshop Instructor / NCHU MIS", "Designed and delivered Python and AI teaching sessions for students, connecting implementation concepts with hands-on practice."],
-        ["AI Intern / Cancell Company Insight Platform & LINE Bot", "Worked on AI-assisted workflow experiments and LINE Bot integration, translating prototype ideas into usable product flows."],
-        ["Software Engineering Intern / Cathay Life Taoyuan Software Development Center", "Supported Java method analysis and SPEC-oriented development tasks in a software engineering context."]
+        ["AI Software Engineering Intern / Health GeneTech Corporation", "Built medical-image inference services with YOLO, Python, and Django; integrated five AI models with a LINE Bot and launched the product in three weeks."],
+        ["Software Engineering Intern / Cathay Life Taoyuan Software Development Center", "Developed a Java reverse-engineering tool that reduced SPEC generation for a single method to about five seconds."],
+        ["Online Programming Instructor / Orange Apple Programming School", "Taught Scratch, Python, HTML/CSS, JavaScript, databases, algorithms, and APCS over five years while using AI to streamline post-class administration."],
+        ["Teaching Assistant / NCHU MIS", "Supported data mining, big data analytics, and AI courses through materials, grading, student mentoring, and Python labs."],
+        ["AI & Data Science Workshop Instructor / NCHU Affiliated Senior High School", "Designed interactive Python labs that guided high school students from data processing to data mining and machine learning."],
+        ["Early Teaching & Student Leadership", "Combined experience as a Minecraft Education instructor, MIS Student Association treasurer, and Magic Club education director."]
       ],
+      experienceDates: ["Feb 2026 - Mar 2026", "Feb 2024 - Jun 2024", "Aug 2021 - Aug 2026", "Sep 2024 - Jul 2026", "Dec 2025 & Jan 2026", "Sep 2020 - Jun 2023"],
+      experienceAlts: ["Cancell Insight platform and LINE Bot integration", "CODE2SPEC documentation automation interface", "Orange Apple online programming class", "NCHU teaching assistant session", "AI and data science workshop"],
       experienceDetails: [
-        ["Course and classroom practice", "I break abstract programming concepts into concrete exercises, adjusting APCS, Python, and web lessons to each student's level.", ["Designed progressive exercises and project tasks to build transferable problem-solving ability.", "Guided students through algorithms, data structures, and basic AI concepts.", "Turned classroom feedback into more stable teaching flows and examples."]],
-        ["Data analysis course support", "I helped students connect preprocessing, modeling, and result interpretation into a complete analysis workflow.", ["Supported Python, data mining, and big data analysis assignments.", "Helped organize assignment specs, grading rubrics, and common mistakes.", "Used feedback to help students correct data processing and code logic."]],
-        ["AI workshop design", "I turned data science and machine learning concepts into hands-on activities for high school students.", ["Planned interactive Python exercises to lower the barrier to AI practice.", "Used datasets and model outputs to explain the data mining workflow.", "Structured the course around concepts, practice, discussion, and recap."]],
-        ["Image AI and product integration", "I helped connect medical image recognition models with platform workflows so outputs could fit real use cases.", ["Worked on wound image data preparation and recognition model development.", "Helped connect Insight platform features with LINE Bot flows.", "Focused on how model outputs can be understood inside practical workflows."]],
-        ["Software documentation automation", "I participated in Java method analysis and SPEC generation flows to reduce documentation overhead.", ["Analyzed code structure and mapped methods to specification documents.", "Helped build automatic conversion logic for more consistent documentation.", "Learned enterprise development needs around specs, maintenance, and communication."]]
+        ["Medical imaging AI brought to production", "I worked across wound-image models, backend APIs, and LINE Bot delivery, migrating existing Cancell Insight Web capabilities into an accessible service.", ["Integrated five AI models, LINE Messaging API, and data flows, completing development and production launch in three weeks.", "Prepared wound-image data, tested and validated YOLO models, and built inference APIs with Django.", "Contributed to a smart-healthcare industry-academia project with China Medical University and used Git for development, testing, and fixes."]],
+        ["Software documentation automation", "I combined static code analysis with AI document generation to parse Java method logic and produce consistent SPEC documents.", ["Reduced analysis and document generation for a single method to approximately five seconds.", "Developed Java functionality and analyzed program architecture for an enterprise internal system.", "Used Git throughout requirements discussions, implementation, testing, and issue resolution."]],
+        ["Five years of teaching and workflow improvement", "I adapted small-group lessons, projects, and APCS preparation to students of different ages and skill levels.", ["Provided real-time debugging and technical guidance to build independent problem-solving skills.", "Designed teaching materials, exercises, and assessments, continuously improving them from student feedback.", "Built an AI learning-record assistant that cut each post-class write-up from minutes to tens of seconds and is used in daily teaching."]],
+        ["Course support and an on-premises RAG assistant", "I helped students connect preprocessing, modeling, and interpretation, then turned recurring questions into a self-service course tool.", ["Supported course planning, materials, grading, mentoring, and hands-on technical assistance.", "Built an on-premises RAG assistant with Open WebUI, ChromaDB, and a local LLM for course and assignment Q&A.", "Extended it with quiz generation and chapter summaries; the work received Ministry of Education project support and a departmental honorable mention."]],
+        ["AI workshop design and instruction", "I translated data science and machine learning into activities high school students could immediately run, observe, and discuss.", ["Created interactive Python labs that lowered the barrier to AI and data mining.", "Used datasets and model outputs to explain analytical workflows and result interpretation.", "Structured each workshop into concept, practice, discussion, and recap stages."]],
+        ["Teaching, organization, and public communication", "These earlier experiences are grouped to preserve the capability story without adding several separate resume sections.", ["Taught Minecraft Education through loops, conditions, functions, and variables, guiding students to complete game projects.", "Managed event budgets, purchasing, reimbursements, and cross-team resource allocation as MIS Student Association treasurer.", "Planned lessons and materials as Magic Club education director, developing leadership, public speaking, and improvisation skills."]]
       ],
       projects: [
-        ["Thyroid Ultrasound Nodule Detection, Segmentation, and Classification", "YOLOv11 / ResNet50 / Flask GUI / Medical Imaging"],
-        ["SnapDiet Nutrition Assistant", "Nutrition assistant / Image-based meal logging / Zeabur"],
+        ["Thyroid Ultrasound Nodule Detection, Segmentation, and Classification", "YOLO / CNN / Transformer / Medical Imaging"],
+        ["SnapDiet Nutrition Assistant", "OpenAI Vision / LINE Bot / Django / PostgreSQL / Docker"],
         ["OpenPediCare", "Django / AI summary / Parent portal / PDF output"],
-        ["OrangeAppleAssistant", "Python desktop app / AI writing assistant / Teaching workflow"],
+        ["Orange Apple AI Learning-Record Assistant", "Teaching workflow / LLM / Web app / Production use"],
         ["Talk2Draw", "Django / Web Speech API / Search / Slides / Ollama"],
         ["LightRAG Harry Potter / Local AI Teaching Assistant", "Graph retrieval / Local LLM / LlamaIndex / Open WebUI"]
       ],
+      projectChips: ["Master's Thesis", "Product", "Healthcare", "EdTech", "Capstone", "RAG"],
+      projectLinkLabels: [[], ["Live Site"], ["GitHub / README"], ["Live Site"], ["GitHub / README"], ["LightRAG Repo", "LlamaIndex Repo"]],
       thesisButton: "Full Thesis",
       projectDetails: [
-        ["README Summary", "My master's thesis focuses on detecting, segmenting, and classifying thyroid nodules in ultrasound images. The system connects three model modules into a clinical-assistance demo workflow.", ["YOLOv11 locates suspected thyroid nodules.", "ResNet50 / timm classifies ROI images as benign or malignant.", "A Flask GUI turns the research pipeline into a visual workflow."]],
-        ["README Summary", "SnapDiet is a nutrition control tool that helps users log meals through photos and chat interactions, then review calories, nutrients, and daily totals.", ["Meal photos lower the friction of daily food tracking.", "Shows calories, protein, fat, carbohydrates, and daily totals.", "The public deployment can be used directly to demonstrate the product experience."]],
+        ["Project Summary", "In collaboration with a medical partner, I built a thyroid ultrasound dataset and connected nodule detection, segmentation, and benign/malignant classification into a clinical-assistance workflow.", ["Used YOLO-series models for nodule detection and image segmentation.", "Combined CNN and Transformer models for benign/malignant classification.", "Achieved 0.84 detection mAP@50:95 and an approximately 0.90 segmentation Dice score."]],
+        ["Project Summary", "SnapDiet analyzes meal photos, returns nutritional estimates, and logs daily intake. It is deployed on Zeabur and remains in active operation.", ["Integrates OpenAI Vision, LINE Messaging API, PostgreSQL, Docker, and Django.", "Reached nearly 500 LINE Official Account friends within its first month.", "Improved recommendations with a registered dietitian and independently delivered requirements, development, containerization, and deployment."]],
         ["README Summary", "OpenPediCare is a pediatric follow-up workspace. After a doctor completes a visit record, the system can generate visit summaries, parent education content, share pages, and PDFs.", ["Built with Django for doctor and parent roles.", "Integrates the browser Web Speech API for transcript workflows.", "Outputs shareable pages and PDFs to improve medical communication."]],
-        ["README Summary", "This classroom record and contact-book generation tool is designed for teaching contexts, helping teachers quickly organize student performance and parent communication.", ["Supports question-bank selection and course-session mapping.", "One-click contact-book text copying reduces administration time.", "Built from real teaching pain points rather than as a display-only demo."]],
-        ["README Summary", "Talk2Draw turns spoken content into visual information, search results, slides, and outlines by combining speech recognition, intelligent search, charts, presentations, and conversational agents.", ["Transforms natural language into visualized and searchable context.", "Supports spoken presentation and conversation-organizing workflows.", "Explores local Ollama models and tool-routing concepts."]],
-        ["README Summary", "These projects show my ability to connect knowledge organization, indexing, graph retrieval, and language-model response workflows.", ["Uses graph retrieval to improve complex relationship queries.", "Builds local RAG systems for course content and assignment Q&A.", "Works with Ollama, vector databases, and document ingestion flows."]]
+        ["Project Summary", "This system combines course data with a few student-performance keywords to generate consistent, natural post-class learning records and is used in daily teaching.", ["Stores course materials, key concepts, and assessment prompts so outputs reflect the actual lesson.", "Uses an LLM to generate complete learning records from the selected course and a few keywords.", "Reduced post-class administration from several minutes to tens of seconds while improving consistency."]],
+        ["Project Summary", "As team lead and primary developer, I integrated semantic analysis, visual information, search, presentation, and conversation features; the project won first place in the departmental capstone competition.", ["Transforms natural language into visual and searchable context.", "Supports spoken presentations and conversation-organizing workflows.", "Owned scheduling, work allocation, backend architecture, API integration, and overall system integration."]],
+        ["Project Summary", "These projects combine graph retrieval for complex relationship queries with an on-premises assistant for student access to course materials and assignments.", ["Uses graph retrieval to improve complex relationship queries.", "Built the course assistant with Open WebUI, ChromaDB, and a local LLM.", "Extended it with quiz generation and summaries; it received teaching-practice project support and a departmental honorable mention."]]
       ],
       writingIntro: ["Medium / HackMD", "Long-form technical essays, research notes, and teaching memos now live in a dedicated article library so the resume page stays focused."],
       writingLinks: ["View More", "Open Full Library"],
@@ -88,8 +97,15 @@
     zh: {
       title: "段浩恩 Howard Tuan",
       tagline: "國立中興大學資訊管理研究所<br>Medical Imaging AI | RAG Systems | Product-minded Builder",
-      profile: "我目前就讀國立中興大學資訊管理研究所，研究與實作主軸放在 <strong>醫療影像 AI、RAG 問答系統、教學工具與可部署產品開發</strong>，也持續在教學與實習現場把技術轉成能被理解、能被操作的流程。",
-      metricNotes: ["NCHU MIS 碩士班", "平均成績 92.4", "程式設計教學與帶班", "Detection / Segmentation / Classification"],
+      pageTitle: "段浩恩 Howard Tuan｜AI 與軟體工程",
+      pageDescription: "段浩恩 Howard Tuan 的個人履歷與作品集，聚焦醫療影像 AI、LLM/RAG、後端系統與可部署 AI 產品。",
+      profile: "我是國立中興大學資訊管理研究所碩士生，預計 2026 年 8 月畢業。專注於 <strong>醫療影像 AI、LLM/RAG、後端系統與雲端部署</strong>，具備從模型開發、API 建置到產品上線的端到端實作經驗。",
+      metrics: [
+        ["4 / 45", "碩班排名", "中興資管所｜GPA 4.21 / 4.3"],
+        ["0.84 / ≈0.90", "論文 mAP / Dice", "甲狀腺超音波偵測與分割"],
+        ["3 週 / 5 模型", "產品上線", "醫療 AI × LINE Bot"],
+        ["近 500 位", "產品採用", "SnapDiet 上線首月 LINE 好友"]
+      ],
       sectionTitles: {
         education: "學歷",
         experience: "工作經驗",
@@ -100,40 +116,47 @@
         certificates: "獎狀 / 證書"
       },
       education: [
-        ["國立中興大學 資訊管理學研究所", "畢業排名 4/45，平均成績 92.4，GPA 4.21/4.3。", "論文：基於深度學習模型應用於甲狀腺超音波影像之良惡性結節偵測、分割與分類研究。"],
+        ["國立中興大學 資訊管理學研究所", "碩班排名 4/45，平均成績 92.4，GPA 4.21/4.3。", "論文：基於深度學習模型應用於甲狀腺超音波影像之良惡性結節偵測、分割與分類研究。"],
         ["中原大學 資訊管理學系", "畢業排名 12/113，平均成績 88.31，GPA 3.92/4。", "畢業專題：話中有畫。"],
         ["新北高工 資料處理科", "科排 6%，建立商管、會計、資料處理與網頁設計基礎。"]
       ],
+      educationDates: ["2024 - 2026（預計 2026 年 8 月畢業）", "2020 - 2024", "2017 - 2020"],
       experience: [
-        ["兒童程式設計老師 / 橘子蘋果程式學苑", "教授 APCS、Scratch、Python、JavaScript、HTML、Database、Algorithm 與 AI，協助學生建立程式基礎與解題能力。"],
-        ["教學助理 / 國立中興大學資訊管理研究所", "協助研究所與大學部課程，支援 Python 教學、作業與課堂技術引導。"],
-        ["AI 工作坊講師 / 國立中興大學資訊管理學系", "設計並講授 Python 與 AI 實作課程，讓學生能把概念接到實際操作。"],
-        ["Cancell公司 AI 實習 / Insight 平台與 LINE Bot 流程", "參與 AI 輔助流程與 LINE Bot 整合實驗，將原型想法轉成可操作的產品流程。"],
-        ["軟體工程實習 / 國泰人壽軟體桃園開發中心", "協助 Java method 分析與 SPEC 導向開發工作。"]
+        ["AI 軟體工程實習生 / 健細胞科技", "以 YOLO、Python 與 Django 開發醫療影像推論服務，3 週內完成 5 個 AI 模型與 LINE Bot 整合並正式上線。"],
+        ["軟體工程實習生 / 國泰人壽軟體桃園開發中心", "開發 Java 程式逆向分析工具，將單一 Method 的 SPEC 文件生成時間縮短至平均約 5 秒。"],
+        ["線上程式設計老師 / 橘子蘋果程式學苑", "五年教授 Scratch、Python、HTML/CSS、JavaScript、資料庫、演算法與 APCS，並以 AI 工具改善課後行政流程。"],
+        ["教學助理 / 國立中興大學資訊管理學系", "支援資料探勘、大數據分析與 AI 課程的教材整理、作業評分、學生輔導及 Python 實作。"],
+        ["AI 與資料科學工作坊講師 / 國立中興大學附中", "規劃互動式 Python 實作，帶領高中學生從資料處理進入資料探勘與機器學習。"],
+        ["早期教學與學生領導經驗", "整合 Minecraft Education 程式教學、資管系系學會總務長與魔術社教學長經歷。"]
       ],
+      experienceDates: ["2026 年 2 月－3 月", "2024 年 2 月－6 月", "2021 年 8 月－2026 年 8 月", "2024 年 9 月－2026 年 7 月", "2025 年 12 月、2026 年 1 月", "2020 年 9 月－2023 年 6 月"],
+      experienceAlts: ["Cancell Insight 平台與 LINE Bot 整合畫面", "CODE2SPEC 文件自動化介面", "橘子蘋果線上程式課堂", "國立中興大學教學助理課程畫面", "AI 與資料科學工作坊教學現場"],
       experienceDetails: [
-        ["課程與教學現場", "把抽象的程式概念拆成可操作的練習，依學生程度調整 APCS、Python 與網頁課程節奏。", ["設計循序練習與專題任務，協助學生建立可遷移的解題能力。", "帶領學生理解演算法、資料結構與基礎 AI 概念。", "將教學回饋整理成更穩定的課堂流程與範例素材。"]],
-        ["資料分析課程支援", "協助學生把資料前處理、模型訓練與結果解讀串成完整分析流程。", ["支援 Python、資料探勘與大數據分析課程作業。", "協助整理題目規格、評分標準與常見錯誤。", "以回饋方式幫助學生修正資料處理與程式邏輯。"]],
-        ["AI 工作坊設計", "將資料科學與機器學習概念轉成高中生能立即操作的實作活動。", ["規劃互動式 Python 實作，降低第一次接觸 AI 的門檻。", "用資料集與模型結果引導學生理解資料探勘流程。", "把課程拆成概念、實作、討論與成果整理四段。"]],
-        ["影像辨識與產品整合", "協助把醫療影像辨識模型與既有平台流程整合，讓模型輸出能接到使用情境。", ["參與傷口影像資料整理與辨識模型開發。", "協助 Insight 平台功能與 LINE Bot 流程串接。", "關注模型結果如何被實際工作流程理解與使用。"]],
-        ["軟體文件自動化", "參與 Java method 分析與 SPEC 文件生成流程，協助團隊降低文件整理成本。", ["分析既有程式碼結構，整理 method 與規格文件之間的對應。", "協助建立自動轉換邏輯，讓文件產出更一致。", "熟悉企業開發流程中的規格、維護與溝通需求。"]]
+        ["醫療影像 AI 與產品落地", "參與傷口辨識模型、後端 API 與 LINE Bot 的完整開發流程，將既有 Cancell Insight Web 功能轉為可直接使用的服務。", ["整合 5 個 AI 模型、LINE Messaging API 與資料流程，3 週內開發完成並正式上線。", "使用 YOLO 參與傷口影像資料整理、模型測試與效能驗證；以 Django 建置推論 API。", "參與中國醫藥大學產學合作智慧醫療專案，使用 Git 完成功能開發、測試與問題修正。"]],
+        ["軟體文件自動化", "結合靜態程式分析與 AI 文件生成，自動解析 Java Method 邏輯並產生一致的 SPEC 文件。", ["將單一 Method 的分析與文件產出時間縮短至平均約 5 秒。", "使用 Java 進行企業內部系統功能開發與程式架構分析。", "以 Git 參與需求討論、功能開發、測試與問題修正，熟悉企業軟體工程流程。"]],
+        ["五年教學與流程改善", "依學生年齡與程度規劃小班課程、專題任務與 APCS 訓練，把抽象概念轉成可操作的練習。", ["提供即時除錯、學習引導與技術諮詢，培養學生的邏輯思考與自主解題能力。", "設計教材、練習題與驗收活動，並依學習回饋持續調整課程節奏。", "開發 AI 聯絡簿生成系統，將每次課程紀錄由數分鐘縮短至數十秒，已用於日常教學。"]],
+        ["課程支援與地端 RAG 助教", "協助學生串起資料前處理、模型訓練與結果解讀，並把重複問答轉為可自主查詢的課程工具。", ["支援課程規劃、教材整理、作業批改、學生輔導與實作技術支援。", "以 Open WebUI、ChromaDB 與本地 LLM 建置 RAG 助教，支援教材與作業問答。", "系統延伸至自動出題與章節摘要，獲教育部教學實踐研究計畫支持及系上專題競賽佳作。"]],
+        ["AI 工作坊設計與授課", "把資料科學與機器學習概念拆成高中生能立即操作、觀察並討論的活動。", ["以互動式 Python 實作降低第一次接觸 AI 與資料探勘的門檻。", "使用資料集與模型輸出引導學生理解分析流程及結果意義。", "將課程組織為概念、實作、討論與成果整理四個階段。"]],
+        ["教學、組織與公開表達", "將三段較早期但具延續性的經歷整合呈現，保留能力脈絡而不增加過多獨立欄位。", ["於夢想機器人教室教授 Minecraft Education，以迴圈、條件、函式與變數帶領學生完成遊戲專案。", "擔任資管系系學會總務長，負責活動預算、採購核銷、資源配置與跨部門協作。", "擔任魔術社教學長，規劃社課與教材、帶領社員學習，培養公開表達、領導與臨場應變能力。"]]
       ],
       projects: [
-        ["甲狀腺超音波結節偵測、分割與分類研究", "YOLOv11 / ResNet50 / Flask GUI / Medical Imaging"],
-        ["SnapDiet 飲控小幫手", "Nutrition assistant / Image-based meal logging / Zeabur"],
+        ["甲狀腺超音波結節偵測、分割與分類研究", "YOLO / CNN / Transformer / Medical Imaging"],
+        ["SnapDiet 飲控小幫手", "OpenAI Vision / LINE Bot / Django / PostgreSQL / Docker"],
         ["OpenPediCare", "Django / AI summary / Parent portal / PDF output"],
-        ["OrangeAppleAssistant", "Python desktop app / AI writing assistant / Teaching workflow"],
+        ["橘子蘋果 AI 聯絡簿生成系統", "Teaching workflow / LLM / Web app / Production use"],
         ["話中有畫", "Django / Web Speech API / Search / Slides / Ollama"],
         ["LightRAG Harry Potter / Local AI Teaching Assistant", "Graph retrieval / Local LLM / LlamaIndex / Open WebUI"]
       ],
+      projectChips: ["碩士論文", "產品", "醫療科技", "教育科技", "畢業專題", "RAG"],
+      projectLinkLabels: [[], ["線上體驗"], ["GitHub / README"], ["線上體驗"], ["GitHub / README"], ["LightRAG 程式庫", "LlamaIndex 程式庫"]],
       thesisButton: "論文全文",
       projectDetails: [
-        ["README 摘要", "碩士論文主題聚焦於甲狀腺超音波影像中的結節偵測、分割與良惡性分類。系統將三個模型模組串成可展示的臨床輔助流程。", ["使用 YOLOv11 進行結節位置偵測。", "以 ResNet50 / timm 對 ROI 進行良惡性二分類。", "整合 Flask GUI，讓研究成果可被視覺化展示。"]],
-        ["README 摘要", "SnapDiet 是飲食控制工具，目標是讓使用者透過照片與聊天互動快速記錄餐點，掌握熱量、營養素與當日累計。", ["以餐點照片降低飲食紀錄門檻。", "提供熱量、蛋白質、脂肪、碳水與每日累計資訊。", "已部署公開站點，可直接對外展示產品體驗。"]],
+        ["專案摘要", "與醫療單位合作建立甲狀腺超音波資料集，串接結節偵測、分割與良惡性分類，形成可展示的臨床輔助流程。", ["使用 YOLO 系列模型進行結節位置偵測與影像分割。", "結合 CNN 與 Transformer 完成良惡性分類。", "偵測 mAP@50:95 達 0.84、分割 Dice Score 約 0.90。"]],
+        ["專案摘要", "SnapDiet 讓使用者拍攝餐點後即可取得營養分析並記錄每日飲食，已部署至 Zeabur 並持續維運。", ["整合 OpenAI Vision、LINE Messaging API、PostgreSQL、Docker 與 Django。", "上線一個月內累積近 500 位 LINE 官方帳號好友。", "與專業營養師合作改善分析與建議，獨立完成需求、開發、容器化及部署。"]],
         ["README 摘要", "OpenPediCare 是兒科回診後照護工作區，醫師完成看診紀錄後，可生成回診摘要、家長衛教、分享頁面與 PDF。", ["以 Django 建立醫師與家長雙角色使用情境。", "整合瀏覽器 Web Speech API，支援逐字稿流程。", "輸出可分享頁面與 PDF，提升醫療溝通效率。"]],
-        ["README 摘要", "這是一個面向教學現場的課堂紀錄與聯絡簿生成工具，幫助老師快速整理學習表現與家長溝通內容。", ["支援題庫抽題、課程與堂數對應流程。", "一鍵複製聯絡簿文字，減少行政時間。", "建立在真實教學痛點之上，不只是展示型 demo。"]],
-        ["README 摘要", "把口說內容即時轉成可理解的視覺資訊、搜尋結果、簡報與大綱，整合語音辨識、智慧搜尋、圖表、簡報與對話代理。", ["自然語言具象化與本機相簿語意選圖。", "口說簡報與對話整理流程。", "支援 Ollama 地端模型與工具路由概念。"]],
-        ["README 摘要", "這一類專案呈現的是我在知識整理、索引建立、圖譜檢索與語言模型回應流程上的整合能力。", ["使用圖結構檢索改善複雜角色關係查詢。", "建置地端 RAG 系統支援課程內容與作業規範問答。", "熟悉 Ollama、向量資料庫與文件導入流程。"]]
+        ["專案摘要", "依課程資料與少量學生表現關鍵字自動生成自然、一致的課後紀錄，已實際用於日常教學。", ["建立課程教材、重點知識與驗收問題資料，讓輸出貼合實際教學內容。", "以 LLM 根據課程與少量表現關鍵字產生完整學習紀錄。", "將原本數分鐘的課後行政流程縮短至數十秒，提升內容一致性。"]],
+        ["專案摘要", "擔任團隊組長與主要開發者，整合語意分析、視覺資訊、搜尋、簡報與對話功能；作品獲系上畢業專題競賽第一名。", ["將自然語言轉成視覺化且可搜尋的資訊。", "支援口說簡報與對話整理流程。", "負責時程規劃、工作分配、後端架構、API 串接與整體系統整合。"]],
+        ["專案摘要", "整合圖譜檢索與地端課程問答：一套處理複雜關係查詢，一套支援學生自主查詢教材與作業。", ["使用圖結構檢索改善複雜角色關係查詢。", "以 Open WebUI、ChromaDB 與本地 LLM 建置課程 RAG 助教。", "導入課程後延伸自動出題與摘要，獲教學實踐研究計畫支持及系上佳作。"]]
       ],
       writingIntro: ["Medium / HackMD", "長篇技術文章、研究筆記、教學 memo 集中到獨立文章庫，首頁只保留最新與精選內容。"],
       writingLinks: ["查看更多", "完整文章庫"],
@@ -245,6 +268,8 @@
     setText("#logo .title", copy.title);
     setHtml("#logo .tagline", copy.tagline);
     setHtml("#profile .lead", copy.profile);
+    document.title = copy.pageTitle;
+    document.querySelector('meta[name="description"]')?.setAttribute("content", copy.pageDescription);
     setText("#education .section-title span", copy.sectionTitles.education);
     setText("#experience .section-title span", copy.sectionTitles.experience);
     setText("#projects .section-title span", copy.sectionTitles.projects);
@@ -253,8 +278,10 @@
     setText("#writing .section-title span", copy.sectionTitles.writing);
     setText("#certifications .section-title span", copy.sectionTitles.certificates);
 
-    setList(".metric-note", copy.metricNotes, (node, value) => {
-      node.textContent = value;
+    setList("#profile .metric-box", copy.metrics, (card, value) => {
+      card.querySelector(".metric-number").textContent = value[0];
+      card.querySelector(".metric-label").textContent = value[1];
+      card.querySelector(".metric-note").textContent = value[2];
     });
 
     setList("#education .info-card", copy.education, (card, value) => {
@@ -263,10 +290,19 @@
         paragraph.textContent = value[index + 1] || "";
       });
     });
+    setList("#education .info-card time", copy.educationDates, (node, value) => {
+      node.textContent = value;
+    });
 
     setList("#experience .timeline-card", copy.experience, (card, value) => {
       card.querySelector("h3").textContent = value[0];
       card.querySelector("summary > p").textContent = value[1];
+    });
+    setList("#experience .timeline-badge", copy.experienceDates, (node, value) => {
+      node.textContent = value;
+    });
+    setList("#experience .experience-visual img", copy.experienceAlts, (node, value) => {
+      node.alt = value;
     });
 
     setList("#experience .timeline-card", copy.experienceDetails, (card, value) => {
@@ -285,6 +321,16 @@
     setList("#projects .project-tile", copy.projects, (card, value) => {
       card.querySelector("h3").textContent = value[0];
       card.querySelector("summary p").textContent = value[1];
+    });
+    setList("#projects .project-chip", copy.projectChips, (node, value) => {
+      node.textContent = value;
+    });
+    setList("#projects .project-tile", copy.projectLinkLabels, (card, values) => {
+      card.querySelectorAll(".project-links a").forEach((link, index) => {
+        if (values[index]) {
+          link.textContent = values[index];
+        }
+      });
     });
 
     setText("[data-thesis-button]", copy.thesisButton);
